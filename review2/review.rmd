@@ -1,0 +1,112 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ./templates/gsingh-basic.tex
+title: "Research Review"
+subtitle: "Network Operation Cost Model to Achieve Efficient Operation and Improving Cost Competitiveness"
+subsubtitle: "CS4457 Networks II"
+
+runhead: "Research Review"
+author:
+- name: Gurpreet Singh
+  studentnumber: 250674134
+  affiliation: Prof. Haque
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 10pt
+blio-style: plainnat
+indent: yes
+bibliography: bibliography.bib
+colorlinks: true
+---
+
+# Summary
+
+The authors of "Network Operation Cost Model to Achieve Efficient Operation and
+Improving Cost Competitiveness" intended to communicate the lack of development
+in cost estimation methodology in telecommunication operations and improve it
+with their new Activity-Based Costing (ABC) method. The paper evaluates as-is
+network cost models and derives an improvement plan with a new cost estimation
+method.
+
+Before introducing their method, they begin by explaining some of the costing
+characteristics used in the telecommunications industry. The characteristics
+were: high facility cost, more overhead expense than direct expense, cost
+estimation is limited, and government regulations. Some cost models that are
+explained in more detail are: Fully Distributed Costs (FDC), Long Run
+Incremental Costing (LRIC), Glide Path, Element Based Model, Activity-Based
+Costing (ABC) and Building Block Costing (BBC). With this information the
+authors provided an adequate amount of background detail for me to understand
+the topic and problem they are focused on solving. 
+
+In the next section of the article the authors begin explaining their proposed
+"methodolgy". @thearticle It is a slow start to their explanation as there is
+a lot of repetition of background information here. The 4 principles that their
+methodology is based on are: Efficiency, Forward Looking, Fairness, and Actual
+Time-Based. Analyzing the descriptions of these points I can derive the essence
+of the methodology. The proposed changes result in setting a standard cost to
+each item, instead of aggregating historical information, and applying
+activity-based costing to the model. At this point in the article they have not
+provided any convincing data or statistics to prove the direction they are
+going is working. Therefore, I am not believing that ignoring historical data
+is beneficial.
+
+The figures that are provided on page 1110 are undescriptive and provide no
+real value to the article. One of the tables is cut in half and the article
+does not adequately describe what it is showing. There is a figure showing the
+different stages of their model, which are: define activity, measure, estimate
+cost, analyze cost. In this figure it is visible how vague their process is. 
+
+# Technical Analysis
+
+In the cost elimination steps outlined in part B of section 3 its seen that the
+authors are attempting to use feedback data from the system to determine what
+the best figures are. This process feels like using ABC but eliminating all
+previous historical data and starting to gather new data from scratch. This
+cannot be good for large telecommunication companies because they would lose
+too much money at the start of the cost elimination process to make it worth
+the switch. 
+
+The authors define a very vague process that can be interpreted in many
+different ways. In essence the process is to define a unit activity that costs
+money in a company, measure how many resources it consumes, make a cost
+estimate for it and then after completing the unit activity, update the
+existing model with the real cost. The goal with this model is to keep
+increasing the amount of data available to the model so it can make more
+informed decisions about the company's costs. This seems like an achievable
+goal. If the article provided more concrete details on how it can produce this
+better than ABC already does, it would have been more convincing.
+
+There are some comparisons to the existing ABC model after the model
+description, explaining how their model has more data and is more accurate in
+showing the largest costs in a company. This is interesting but the main
+purpose of the paper is to reduce the costing, and although these are related
+points, they don't directly link it to a large reduction in costs. This sounds
+too similar to ABC for the authors to even have a basis for research.
+
+From reading their technical details, I do not believe this model would help
+telecommunication companies improve cost efficiency because of the upfront
+costs associated with putting the model in place.
+
+# Suggestions and Presentation
+
+The presentation of this article was very poor. The general readability of the
+article greatly suffered due to lack of proofreading which was seen throughout
+the article. There were many grammatical errors that made the article almost
+unreadable. Sentences had poor cohesion and it was not easy to determine the
+topic of each paragraph. On top of the poor English that was observed in the
+article, there was also a lack of figures describing the model they are
+proposing. Due to these qualities, the true meaning of the article is hard to
+understand. The validity of the paper suffers because of the many different
+ways each paragraph could be interpreted.
+
+The authors could have greatly improved this article by getting it proofread
+and reorganizing their thoughts. From an article that is proposing a new way of
+approaching an old costing method, I would have expected direct comparisons to
+ABC and quantitative proof of how they can improve upon it. 
