@@ -1,2 +1,2 @@
-# NetworkingResearch
-Contains reviews written by me on research papers related to networking
+# Research
+Contains research paper reviews and textbook info related to many different fields.
