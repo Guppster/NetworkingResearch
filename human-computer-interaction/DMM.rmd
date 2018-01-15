@@ -1,0 +1,29 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    template: ../templates/gsingh-basic.tex
+title: "Designing with the Mind in Mind"
+subtitle: "Chapters 1, 2 and 3"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Chapter 1
+
+# Chapter 2
+
+# Chapter 3
