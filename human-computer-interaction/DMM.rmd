@@ -6,9 +6,9 @@ output:
     number_sections: false
     keep_tex: true
     fig_caption: true
-    template: ../templates/gsingh-basic.tex
+    template: ../templates/gsingh-HCI.tex
 title: "Designing with the Mind in Mind"
-subtitle: "Chapters 1, 2 and 3"
+subtitle: "Chapters 4, 5 and 6"
 subsubtitle: "Reading Summary"
 
 runhead: "Reading Summary"
@@ -22,8 +22,94 @@ indent: yes
 colorlinks: true
 ---
 
-# Chapter 1
+# Chapter 4
 
-# Chapter 2
+## Reading is Unnatural
 
-# Chapter 3
+### Wired for Language not Reading
+
+We are born to speak languages and learn to speak quickly in our childhood but
+when we get older it is as difficult as any other skill A different brain area
+is used for this type of learning after childhood. Most people learn how to
+speak but some people never learn how to read. People may not be good at
+reading because of {basically my problems irl}
+
+Reading is teaching our brains how to recognize patterns. Morphemes are
+combinations of letters we recognize and put together to make words
+
+### Feature driven vs context driven
+
+Feature driven is bottom up and sometimes called "context free". It starts by
+identifying simple features like lines and uses them to make complex objects
+like words. This type of reading is faster than context driven despite
+instinct.
+
+Context driven is top down and opposite of feature driven. You recognize
+a morpheme, word or sentence and treat it like a single object to get it's
+meaning. An example of this is something you would read often. Mainly a backup
+method for reading.
+
+### Skilled vs Unskilled reading
+
+"Skilled readers" use feature driven mostly and fallback to context driven
+"Unskilled readers" use context driven because feature driven is slow for them.
+
+Not enough experience reading as a child causes unskilled reading
+
+### Poor information design disprupts reading
+
+Poor presentation can block reading for unskilled readers. The following are
+things that disrupt reading:
+
+- Uncommon words
+- Difficult scripts and typefaces 
+- Tiny Fonts
+- Text on noisy background
+- Visual noise from too much text
+- Centered text is hard for eyes to follow
+
+Any combination of the above can make for a very unreadable design Support both
+reading styles by avoiding the problems listed above.
+
+### Most reading is unnecessary
+
+Most software has too much text in the instructions and people don't read it
+anyway. You can be just as clear with less text. Provide a brief overview and
+let users request more detail if they want. 
+
+# Chapter 5
+
+## Our Color Vision is Limited
+
+### Optimized for Edge Contrast
+
+We can see something better if it is high contrast and brightness isn't as important
+
+### Discrimination based on Presentation
+
+The paler (less saturated) two colors are, the harder it is to tell them apart
+
+The smaller and thinner objects are, the harder it is to distinguish their colors
+
+The more separated color patches are, the more difficult it is to distinguish their colors
+
+### Color-Blindness
+
+Converting an image to grayscale can help you design applications for color blind people
+
+### External Factors
+
+Each color display can show something different just because of the technology.
+Grayscale displays can also have this problem.
+Display angle can make different images look different. TN panels lol.
+Ambient illumination can wash out colors, enough to make color displays into grayscale
+
+### Guidelines for using Color
+
+- Distinguish colors by saturation and brightness as well as hue, avoid subtle color differences
+- Use distinctive colors, increase contrast
+- Avoid color pairs that color-blind people cannot distinguish
+- Use color redundantly with other hues
+- Separate string opponent colors
+
+# Chapter 6
