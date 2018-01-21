@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  21 JAN 2018 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.6)  21 JAN 2018 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,8 +766,6 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count114
 ) (/opt/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (/opt/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/opt/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -821,33 +819,33 @@ les
 (./DMM.aux)
 \openout1 = `DMM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
 (/opt/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 85.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 84.
 (/opt/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 85.
+LaTeX Info: Redefining \microtypecontext on input line 84.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -920,7 +918,7 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 )) (/opt/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-Package hyperref Info: Link coloring ON on input line 85.
+Package hyperref Info: Link coloring ON on input line 84.
 (/opt/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/opt/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -928,9 +926,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 (./DMM.out) (./DMM.out)
 \@outlinefile=\write3
 \openout3 = `DMM.out'.
@@ -945,9 +943,9 @@ Package microtype Info: Character `029' is missing
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \shipout\null
+l.109 \shipout\null
                     [1]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 167.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 165.
 
 (/opt/texlive/2017/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -962,36 +960,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.173   T
-         ext on noisy background [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+l.205 ...el{discrimination-based-on-presentation}}
+                                                   [1] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 322.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 322.
 (./DMM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 322.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 322.
 Package rerunfilecheck Info: File `DMM.out' has not changed.
-(rerunfilecheck)             Checksum: 51E95C44C61E922A14CC70EBED4591A1;2569.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+(rerunfilecheck)             Checksum: E5D361B1C86B803114CD8699AE530ADC;3709.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 322.
  ) 
 Here is how much of TeX's memory you used:
- 12660 strings out of 494427
- 180692 string characters out of 6168382
- 283721 words of memory out of 5000000
- 15834 multiletter control sequences out of 15000+600000
- 43354 words of font info for 47 fonts, out of 8000000 for 9000
+ 12664 strings out of 494427
+ 180762 string characters out of 6168382
+ 285761 words of memory out of 5000000
+ 15817 multiletter control sequences out of 15000+600000
+ 43769 words of font info for 52 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 32i,11n,43p,310b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,11n,43p,310b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/opt/texlive/201
 7/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</opt/texlive/2017/texmf-dist/fonts/t
 ype1/public/lm/lmbx10.pfb></opt/texlive/2017/texmf-dist/fonts/type1/public/lm/l
 mbx12.pfb></opt/texlive/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt
 /texlive/2017/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2017/tex
 mf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on DMM.pdf (4 pages, 125822 bytes).
+Output written on DMM.pdf (5 pages, 132096 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 8305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 165 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 8353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

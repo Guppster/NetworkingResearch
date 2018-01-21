@@ -83,33 +83,79 @@ let users request more detail if they want.
 
 ### Optimized for Edge Contrast
 
-We can see something better if it is high contrast and brightness isn't as important
+We can see something better if it is high contrast and brightness isn't as
+important
 
 ### Discrimination based on Presentation
 
 The paler (less saturated) two colors are, the harder it is to tell them apart
 
-The smaller and thinner objects are, the harder it is to distinguish their colors
+The smaller and thinner objects are, the harder it is to distinguish their
+colors
 
-The more separated color patches are, the more difficult it is to distinguish their colors
+The more separated color patches are, the more difficult it is to distinguish
+their colors
 
 ### Color-Blindness
 
-Converting an image to grayscale can help you design applications for color blind people
+Converting an image to grayscale can help you design applications for color
+blind people
 
 ### External Factors
 
 Each color display can show something different just because of the technology.
-Grayscale displays can also have this problem.
-Display angle can make different images look different. TN panels lol.
-Ambient illumination can wash out colors, enough to make color displays into grayscale
+Grayscale displays can also have this problem. Display angle can make different
+images look different. TN panels lol. Ambient illumination can wash out colors,
+enough to make color displays into grayscale
 
 ### Guidelines for using Color
 
-- Distinguish colors by saturation and brightness as well as hue, avoid subtle color differences
+- Distinguish colors by saturation and brightness as well as hue, avoid subtle
+  color differences
 - Use distinctive colors, increase contrast
 - Avoid color pairs that color-blind people cannot distinguish
 - Use color redundantly with other hues
 - Separate string opponent colors
 
 # Chapter 6
+
+## Our Peripheral Vision is Poor
+
+### Resolution of the Fovea vs Periphery
+
+There is a lower resolution on the outside of your eye than on the inside of
+your eye. You see great in the center and not so great on the outsides. We can
+discriminate colors better in the center as well.
+
+### Good for Anything?
+
+It provides low resolution cues to help guide our eyes. It sees fuzzy things
+and then we focus on that fuzzy thing if it looks like what we want. Its good
+at detecting motion
+
+### Computer User Interfaces
+
+Errors are often missed if they aren't placed in the center or where the user
+is looking. Make sure error messages are popping up where the user is looking
+like the "Login" button.
+
+### Techniques to make messages visible
+
+- Put it where the users are looking (like i said above)
+- Mark the error with what it is referencing
+- Use an error symbol because people recognize it
+- Reserve red for errors because people recognize it
+
+#### More dangerous ways to get user's attention
+
+- Pop-up message
+
+This makes it hard to miss because it steals the focus from the application
+window so the user HAS to see it.
+
+- Use Sound
+- Flash or Wiggle
+
+These two will alert the user better because they are such obvious indicators
+of action. They will cause the user to scan for the error These should be
+reserved for very critical errors as they can become very annoying
