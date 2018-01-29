@@ -99,7 +99,7 @@
     \end{center}
     
     \begin{flushright}
-    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ January 28, 2018 \\}\normalsize\emph{CS4474 \\} }
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ January 29, 2018 \\}\normalsize\emph{CS4474 \\} }
     
     \end{flushright}
 
@@ -118,41 +118,83 @@ Imperfect}\label{our-attention-is-limited-our-memory-is-imperfect}}
 \hypertarget{short-vs-long-term}{%
 \subsubsection{Short vs Long term}\label{short-vs-long-term}}
 
+Short term ranges from a faction of a second to several seconds up to a
+minute. Long term memory covers the rest of the memory situations. They
+are not seperate physical stores of memory in the brain.
+
 \hypertarget{long-term}{%
 \paragraph{Long term}\label{long-term}}
 
+How your brain reacts to senses greatly depends on the context in which
+you are and the features you are experiencing. The more similar two
+situations, the more overlap there is between brain activity. The more a
+neural memory pattern is reactivated the stronger it becomes and
+therefore is easier to reactivate and this signifies long term memory.
+Neural patterns with high recall, strong, and easy to reactivate.
+
+\hypertarget{error-prone}{%
+\paragraph{Error prone}\label{error-prone}}
+
+Human brain has unlimited memory. Everything stored in heavily
+compressed in lossy format. Different memories have different levels of
+detail
+
+\hypertarget{weighted-by-emotions}{%
+\paragraph{Weighted by emotions}\label{weighted-by-emotions}}
+
+Emotions can change how well you remember something and what you feel
+when you think of that memory
+
+\hypertarget{retroactively-alterable}{%
+\paragraph{Retroactively alterable}\label{retroactively-alterable}}
+
+Your memory of an event can change over time and be morphed into other
+memories. Nothing is 100 percent accurate.
+
+\hypertarget{implications-of-long-term-memory}{%
+\subsubsection{Implications of long term
+memory}\label{implications-of-long-term-memory}}
+
+Avoid making software that burdens longterm memory by not making people
+remember things often. Password authentication breaks this rule.
+Security questions also break this rule. Editor shortcut key
+combinations break this rule. Keep your shortcuts consistent.
+
 \hypertarget{short-term}{%
 \paragraph{Short term}\label{short-term}}
+
+Short term memory is not a store and instead is just a temporary place
+where senses go to be worked on. Each sense has it's own small short
+term memory. The brain fetches data from these sense caches like a
+queue. Also called working memory and is equal to the focus of our
+attention. Has low capacity and is volatile. Anything one can be aware
+of can be stored in short term memory Can contain 4 plus or minus two
+items if they arent chunked together
 
 \hypertarget{implications-of-short-term-memory}{%
 \subsubsection{Implications of short term
 memory}\label{implications-of-short-term-memory}}
 
+Dont require people to remember too many things at one time
+
 \hypertarget{modes}{%
 \paragraph{Modes}\label{modes}}
+
+Avoid modes, or provide mode-feedback because people can't remember.
+Modes are like VIM, which is great, advantages obvious. Disadvantages
+are you can run into mode-errors. Not knowing which mode you're in.
 
 \hypertarget{search-results}{%
 \paragraph{Search Results}\label{search-results}}
 
+Remember to show the search terms in the search results page because
+people can't remember what they just searched for a few seconds ago.
+
 \hypertarget{instructions}{%
 \paragraph{Instructions}\label{instructions}}
 
-\hypertarget{characteristics-of-long-term-memory}{%
-\subsubsection{Characteristics of Long term
-memory}\label{characteristics-of-long-term-memory}}
-
-\hypertarget{error-prone}{%
-\paragraph{Error prone}\label{error-prone}}
-
-\hypertarget{weighted-by-emotions}{%
-\paragraph{Weighted by emotions}\label{weighted-by-emotions}}
-
-\hypertarget{retroactively-alterable}{%
-\paragraph{Retroactively alterable}\label{retroactively-alterable}}
-
-\hypertarget{implications-of-long-term-memory}{%
-\subsubsection{Implications of long term
-memory}\label{implications-of-long-term-memory}}
+Show instructions to the user when they need to use them because they
+cannot remember all the steps when they are on the next page.
 
 \hypertarget{chapter-8}{%
 \section{Chapter 8}\label{chapter-8}}
@@ -165,24 +207,58 @@ Action}\label{limits-on-attention-shape-thought-and-action}}
 \subsubsection{We focus on our goals, not our
 tools}\label{we-focus-on-our-goals-not-our-tools}}
 
+We put all our attention into achiving our goal and very little on how
+to use our tools. Therefore we sometimes continue using our tools
+inefficiently as long as we achieve our goal.
+
 \hypertarget{we-use-external-aids}{%
 \subsubsection{We use external aids}\label{we-use-external-aids}}
+
+We change our environment to store information inside of it instead of
+using our short or long term memory. Therefore software should visually
+indicate where the user is in their task so they don't have to memorize
+anything. Ex. read and unread emails being highlighted and grayed out
+respectively
 
 \hypertarget{we-follow-information-scent-toward-our-goal}{%
 \subsubsection{We follow information scent toward our
 goal}\label{we-follow-information-scent-toward-our-goal}}
 
+Humans click on things that indicate that they will lead to the goal
+they want to achieve.
+
 \hypertarget{we-prefer-familiar-paths}{%
 \subsubsection{We prefer familiar
 paths}\label{we-prefer-familiar-paths}}
+
+People do what they are used to instead of exploring new paths through
+the software because their attention is limited. Problem solving places
+heavy load on attention and short-term memory. Classic case of vim users
+sticking to the few commands they know to achieve full functionality
+instead of adding to their list of known commands
 
 \hypertarget{our-thought-cycle-goal-execute-evaluate}{%
 \subsubsection{Our thought cycle: Goal, Execute,
 Evaluate}\label{our-thought-cycle-goal-execute-evaluate}}
 
+We form a goal. We execute actions to try and make progress toward that
+goal. We evaluate whether the actions worked and repeat until goal
+reached.
+
+Provide clear paths to the goal. Software concepts should be based on
+the task rather than the code. Provide feedback to the user so they can
+evaluate correctly
+
 \hypertarget{after-we-achieve-a-task-we-forget-cleanup}{%
 \subsubsection{After we achieve a task, we forget
 cleanup}\label{after-we-achieve-a-task-we-forget-cleanup}}
+
+Once we are out of the goal, execute, evaluate loop for one specific
+goal, we forget about that thought stream and don't clean up any mess we
+made while reaching that goal. To avoid this, interactive systems should
+help the human clean up or atleast remind them in the evaluate portion
+of the loop. If possible the system should clean up for the human so you
+can save their attention for more important tasks.
 
 \hypertarget{chapter-9}{%
 \section{Chapter 9}\label{chapter-9}}
@@ -194,28 +270,51 @@ hard}\label{recognition-easy-recall-hard}}
 \hypertarget{recognition-is-easy}{%
 \subsubsection{Recognition is Easy}\label{recognition-is-easy}}
 
+Patterns of activity can be activated in two ways: By more perceptions
+coming in from the senses, and by other brain activity. If a new
+perception comes in that is similar to an old you, you have recognition.
+We can quickly recognize faces.
+
 \hypertarget{recall-is-hard}{%
 \subsubsection{Recall is hard}\label{recall-is-hard}}
+
+Recall is trying to access long term memory without reactivating old
+neural patterns with a new instance. It is possible but much harder. It
+is also prone to more errors. People use mind palaces to help with
+recall.
 
 \hypertarget{recognition-vs-recall}{%
 \subsubsection{Recognition vs Recall}\label{recognition-vs-recall}}
 
+Seeing something and choosing it is easier than recalling something and
+typing it so software should do the recalling for the user because it
+has memory. People can recognize pictures easily so use those instead of
+text to convey function.
+
 \hypertarget{use-thumbnail-images-to-depict-full-sized-images}{%
 \paragraph{Use thumbnail images to depict full-sized
 images}\label{use-thumbnail-images-to-depict-full-sized-images}}
+
+Recognition doesn't care what size the objects are, we can still
+recognize them. Therefore to fit more data into vision at once,
+thumbnails are a good idea.
 
 \hypertarget{the-larger-the-number-of-people-who-will-use-a-function-the-more-visible-the-function-should-be}{%
 \paragraph{The larger the number of people who will use a function, the
 more visible the function should
 be}\label{the-larger-the-number-of-people-who-will-use-a-function-the-more-visible-the-function-should-be}}
 
+Make it so the least amount of people have to recall where a function is
+located in software. If it is commonly used you don't want people to
+fail because it will add up to a lot of people.
+
 \hypertarget{use-visual-cues-to-let-users-recognize-where-they-are}{%
 \paragraph{Use visual cues to let users recognize where they
 are}\label{use-visual-cues-to-let-users-recognize-where-they-are}}
 
-\hypertarget{make-authentication-information-easy-to-recall}{%
-\paragraph{Make authentication information easy to
-recall}\label{make-authentication-information-easy-to-recall}}
+Visual recognition is fast just like pictures mentioned above. Slight
+changes is visuals can help users find out which part of your
+application they are currently using.
 
 \end{document}
 
