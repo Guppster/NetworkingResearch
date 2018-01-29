@@ -1,0 +1,85 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    template: ../templates/gsingh-HCI.tex
+title: "Designing with the Mind in Mind"
+subtitle: "Chapters 7, 8 and 9"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Chapter 7
+
+## Our Attention is Limited Our Memory is Imperfect
+
+### Short vs Long term
+
+#### Long term
+
+#### Short term
+
+### Implications of short term memory
+
+#### Modes 
+
+#### Search Results
+
+#### Instructions
+
+### Characteristics of Long term memory
+
+#### Error prone
+
+#### Weighted by emotions
+
+#### Retroactively alterable
+
+### Implications of long term memory
+
+# Chapter 8
+
+## Limits on Attention, Shape, Thought and Action
+
+### We focus on our goals, not our tools
+
+### We use external aids
+
+### We follow information scent toward our goal
+
+### We prefer familiar paths 
+
+### Our thought cycle: Goal, Execute, Evaluate
+
+### After we achieve a task, we forget cleanup
+
+# Chapter 9
+
+## Recognition Easy, Recall hard
+
+### Recognition is Easy
+
+### Recall is hard
+
+### Recognition vs Recall
+
+#### Use thumbnail images to depict full-sized images
+
+#### The larger the number of people who will use a function, the more visible the function should be
+
+#### Use visual cues to let users recognize where they are
+
+#### Make authentication information easy to recall

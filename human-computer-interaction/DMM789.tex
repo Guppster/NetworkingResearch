@@ -1,0 +1,221 @@
+\documentclass[11pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Designing with the Mind in Mind},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% Stuff I added.
+% --------------
+
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{layout}   
+\lhead{\sc Reading Summary}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+% Begin document
+% --------------
+
+\begin{document}
+
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300} \\ 
+    [0.25in]
+    \huge{\bfseries Designing with the Mind in Mind} \\
+    [2mm]
+    \line(1,0){200} \\
+    [1.5cm] 
+    \textsc{\Large Chapters 7, 8 and 9} \\
+    [0.75cm]
+    \textsc{\Large Reading Summary} \\
+    [12cm]
+    \end{center}
+    
+    \begin{flushright}
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ January 28, 2018 \\}\normalsize\emph{CS4474 \\} }
+    
+    \end{flushright}
+
+\end{titlepage}
+
+\newpage
+\shipout\null
+
+\hypertarget{chapter-7}{%
+\section{Chapter 7}\label{chapter-7}}
+
+\hypertarget{our-attention-is-limited-our-memory-is-imperfect}{%
+\subsection{Our Attention is Limited Our Memory is
+Imperfect}\label{our-attention-is-limited-our-memory-is-imperfect}}
+
+\hypertarget{short-vs-long-term}{%
+\subsubsection{Short vs Long term}\label{short-vs-long-term}}
+
+\hypertarget{long-term}{%
+\paragraph{Long term}\label{long-term}}
+
+\hypertarget{short-term}{%
+\paragraph{Short term}\label{short-term}}
+
+\hypertarget{implications-of-short-term-memory}{%
+\subsubsection{Implications of short term
+memory}\label{implications-of-short-term-memory}}
+
+\hypertarget{modes}{%
+\paragraph{Modes}\label{modes}}
+
+\hypertarget{search-results}{%
+\paragraph{Search Results}\label{search-results}}
+
+\hypertarget{instructions}{%
+\paragraph{Instructions}\label{instructions}}
+
+\hypertarget{characteristics-of-long-term-memory}{%
+\subsubsection{Characteristics of Long term
+memory}\label{characteristics-of-long-term-memory}}
+
+\hypertarget{error-prone}{%
+\paragraph{Error prone}\label{error-prone}}
+
+\hypertarget{weighted-by-emotions}{%
+\paragraph{Weighted by emotions}\label{weighted-by-emotions}}
+
+\hypertarget{retroactively-alterable}{%
+\paragraph{Retroactively alterable}\label{retroactively-alterable}}
+
+\hypertarget{implications-of-long-term-memory}{%
+\subsubsection{Implications of long term
+memory}\label{implications-of-long-term-memory}}
+
+\hypertarget{chapter-8}{%
+\section{Chapter 8}\label{chapter-8}}
+
+\hypertarget{limits-on-attention-shape-thought-and-action}{%
+\subsection{Limits on Attention, Shape, Thought and
+Action}\label{limits-on-attention-shape-thought-and-action}}
+
+\hypertarget{we-focus-on-our-goals-not-our-tools}{%
+\subsubsection{We focus on our goals, not our
+tools}\label{we-focus-on-our-goals-not-our-tools}}
+
+\hypertarget{we-use-external-aids}{%
+\subsubsection{We use external aids}\label{we-use-external-aids}}
+
+\hypertarget{we-follow-information-scent-toward-our-goal}{%
+\subsubsection{We follow information scent toward our
+goal}\label{we-follow-information-scent-toward-our-goal}}
+
+\hypertarget{we-prefer-familiar-paths}{%
+\subsubsection{We prefer familiar
+paths}\label{we-prefer-familiar-paths}}
+
+\hypertarget{our-thought-cycle-goal-execute-evaluate}{%
+\subsubsection{Our thought cycle: Goal, Execute,
+Evaluate}\label{our-thought-cycle-goal-execute-evaluate}}
+
+\hypertarget{after-we-achieve-a-task-we-forget-cleanup}{%
+\subsubsection{After we achieve a task, we forget
+cleanup}\label{after-we-achieve-a-task-we-forget-cleanup}}
+
+\hypertarget{chapter-9}{%
+\section{Chapter 9}\label{chapter-9}}
+
+\hypertarget{recognition-easy-recall-hard}{%
+\subsection{Recognition Easy, Recall
+hard}\label{recognition-easy-recall-hard}}
+
+\hypertarget{recognition-is-easy}{%
+\subsubsection{Recognition is Easy}\label{recognition-is-easy}}
+
+\hypertarget{recall-is-hard}{%
+\subsubsection{Recall is hard}\label{recall-is-hard}}
+
+\hypertarget{recognition-vs-recall}{%
+\subsubsection{Recognition vs Recall}\label{recognition-vs-recall}}
+
+\hypertarget{use-thumbnail-images-to-depict-full-sized-images}{%
+\paragraph{Use thumbnail images to depict full-sized
+images}\label{use-thumbnail-images-to-depict-full-sized-images}}
+
+\hypertarget{the-larger-the-number-of-people-who-will-use-a-function-the-more-visible-the-function-should-be}{%
+\paragraph{The larger the number of people who will use a function, the
+more visible the function should
+be}\label{the-larger-the-number-of-people-who-will-use-a-function-the-more-visible-the-function-should-be}}
+
+\hypertarget{use-visual-cues-to-let-users-recognize-where-they-are}{%
+\paragraph{Use visual cues to let users recognize where they
+are}\label{use-visual-cues-to-let-users-recognize-where-they-are}}
+
+\hypertarget{make-authentication-information-easy-to-recall}{%
+\paragraph{Make authentication information easy to
+recall}\label{make-authentication-information-easy-to-recall}}
+
+\end{document}
+
