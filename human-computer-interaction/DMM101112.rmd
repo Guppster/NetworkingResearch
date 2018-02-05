@@ -36,9 +36,106 @@ planning.
 When we run into a situation, all three brains decide how we react and our
 actions. The old brain and mid brain react faster than the new brain.
 
+### Learning from Experience is Easy
+
+People learn from their daily experiences without knowing that they are
+learning. Some problems with learning from experience are listed next.Complex
+situations with lots of variables are hard to learn from because they do not
+occur as often as other experiences. 
+
+Real life experiences are more valuable to the brain then ones you read or hear
+about. If something has happened to you or your family member, you will
+remember it better.
+
+You may not learn the correct lesson from an experience if you made the wrong
+decision at the time of the event. You are not always able to remember the
+correct decision if the event occurred again.
+
+People often overgeneralize. If you have only seen dangerous animals that are
+black, you will think all dangerous animals are black. This can be seen as
+a con or a pro because overgeneralization allows humans to make assumptions
+about things they havent seen before which could save their life and help
+evolution.
+
+### Performing learned actions is easy
+
+When we do something many times we can do it without thinking. Real world tasks
+have a mixture of automatic and controlled components because without the mix
+we wouldn't be able to process everything at once. We need automatic activities
+to assist us.
+
+### Problem Solving and Calculation are Hard
+
+New problems are hard to solve. Having a large new brain helps us solve these
+problems. Problem solving requires focus and is slow. Executes slowly and serially.
+Our brains are not optimized for calculation because numbers are so new. We need 
+external memory aids to solve complex problems because we use them like extra
+working memory.
+
+### Implications for UI design
+
+- Indicate system status and how far user is to goal
+
+- Guide users toward the goal
+
+- Tell users instructions and make them exact
+
+- Don't make users diagnose system problems
+
+- Minimize number of settings
+
+- Minimize calculation (Use graphs)
+
+- Make system similar to something user is used to
+
 # Chapter 11
 
 ## Many Factors Assist Learning
+
+### Learn faster when task is consistent
+
+The gap between what the user wants and what a tool provides is called the
+"gulf of execution". The smaller the gulf of execution the less the users need
+to think about the tool. Design the tool to provide exactly what the user wants
+to do
+
+- Perform a task analysis
+
+- Design task focused conceptual model
+
+- Design UI based on conceptual model
+
+A task analysis answers questions about what the user wants to do with the
+software and which tasks are most important/frequent.
+
+### Object / Action Analysis
+
+Specifies all the conceptual objects that an application will expose to the
+user. Basically a UML diagram for UI objects.
+
+Aim to simplify this with the least amount of concepts and actions the user has
+to remember.
+
+Interactive systems should aim to be consistent. More consistent they are the
+faster the user can begin using automatic actions inside of the software
+
+You can make a matrix with Objects on Y and Actions on X and find out which
+interactions are being done the most to optimize the usage patterns
+
+### Learn faster when vocab is task-focused
+
+Keeping terminology related to the task the user is trying to finish minimizes
+the time a user needs to learn how to use the software. Use easier words that
+non CS people can understand. Public instead of DB and private instead of
+local. Use words that are seen by many people often. Use similar words around
+the whole software so the user has to learn less.
+
+### Learn faster when Risk is Low
+
+When there is not much to lose the user will be more inclined to click around
+and explore the software. If the user is scared of messing something up they
+wont click on anything they arnt used to seeing the result of. Make easily
+approachable UIs
 
 # Chapter 12
 
