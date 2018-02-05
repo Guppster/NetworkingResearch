@@ -140,3 +140,47 @@ approachable UIs
 # Chapter 12
 
 ## Time Requirements Exist
+
+### Responsivness defined
+
+Responsiveness is how quickly a system responds to the user's interactions.
+A system can be responsive even with poor performance. You should use callbacks
+to let the UI continue operating and let the user know that something will finish.
+When a system isnt responsive it cant meet the time deadlines of the human. 
+
+### Time constraints for the human brain 
+
+1 milisecond is the shortest amount of silence you can detect. 5 miliseconds is
+the shortest amount of time you can see a visual change to be effected by it 80
+miliseconds is how long it takes you to flinch to something. Then it takes 100
+miliseconds to fully process something you have seen. Your system has to react
+to an action within 140 miliseconds (1.4 seconds) for the user to understand
+that their action had an effect on your system. Your attention takes 500
+miliseconds to reset from one item to the next. It takes 700 miliseconds to do
+a motor action after observing something visual. Any gap in conversation longer
+than 1 second is awkward.  A sub-mental task can take up to a maximum of
+10 seconds.
+
+Interactive systems need to keep the above constraints in mind when engineering.
+
+### HCI implications
+
+The guidelines for this chapter are:
+
+- React to user interactions instantly
+- Indicate background processing 
+- Use callbacks and dont hold UI in focus when processing
+- Animate smoothly
+- Allow users to cancel processing
+- provide a ETA for processing 
+
+Additional implications include
+- use busy indicators (spinning circles and loading bars)
+- Know when it is allowed to use a delay and when it will bother the user
+  (sometimes its acceptable if they are doing something hard)
+- Display important data first and avoid delays by prompting for extra
+  information instead of preprocessing everything for viewing
+- When the user is not doing anything directly, you can process information in
+  the background and be ready for the next actions the user may take 
+- Monitor how long your application has taken and if it falls into an
+  acceptable time duration
