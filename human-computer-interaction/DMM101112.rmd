@@ -1,0 +1,45 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    template: ../templates/gsingh-HCI.tex
+title: "Designing with the Mind in Mind"
+subtitle: "Chapters 10, 11 and 12"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Chapter 10
+
+## Learning From Experience
+
+### Three Brains
+
+The old brain categorizes everything into edible, dangerous, or sexy and
+regulates the body's automatic functions. The mid brain controls emotions and
+reactions to events. The new brain controls conscious activity including
+planning. 
+
+When we run into a situation, all three brains decide how we react and our
+actions. The old brain and mid brain react faster than the new brain.
+
+# Chapter 11
+
+## Many Factors Assist Learning
+
+# Chapter 12
+
+## Time Requirements Exist

@@ -1,0 +1,143 @@
+\documentclass[11pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Designing with the Mind in Mind},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% Stuff I added.
+% --------------
+
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{layout}   
+\lhead{\sc Reading Summary}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+% Begin document
+% --------------
+
+\begin{document}
+
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300} \\ 
+    [0.25in]
+    \huge{\bfseries Designing with the Mind in Mind} \\
+    [2mm]
+    \line(1,0){200} \\
+    [1.5cm] 
+    \textsc{\Large Chapters 10, 11 and 12} \\
+    [0.75cm]
+    \textsc{\Large Reading Summary} \\
+    [12cm]
+    \end{center}
+    
+    \begin{flushright}
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ February 04, 2018 \\}\normalsize\emph{CS4474 \\} }
+    
+    \end{flushright}
+
+\end{titlepage}
+
+\newpage
+\shipout\null
+
+\hypertarget{chapter-10}{%
+\section{Chapter 10}\label{chapter-10}}
+
+\hypertarget{learning-from-experience}{%
+\subsection{Learning From Experience}\label{learning-from-experience}}
+
+\hypertarget{three-brains}{%
+\subsubsection{Three Brains}\label{three-brains}}
+
+The old brain categorizes everything into edible, dangerous, or sexy and
+regulates the body's automatic functions. The mid brain controls
+emotions and reactions to events. The new brain controls conscious
+activity including planning.
+
+When we run into a situation, all three brains decide how we react and
+our actions. The old brain and mid brain react faster than the new
+brain.
+
+\hypertarget{chapter-11}{%
+\section{Chapter 11}\label{chapter-11}}
+
+\hypertarget{many-factors-assist-learning}{%
+\subsection{Many Factors Assist
+Learning}\label{many-factors-assist-learning}}
+
+\hypertarget{chapter-12}{%
+\section{Chapter 12}\label{chapter-12}}
+
+\hypertarget{time-requirements-exist}{%
+\subsection{Time Requirements Exist}\label{time-requirements-exist}}
+
+\end{document}
+
