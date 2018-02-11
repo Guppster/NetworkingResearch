@@ -1,0 +1,265 @@
+\documentclass[11pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Designing with the Mind in Mind},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% Stuff I added.
+% --------------
+
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{layout}   
+\lhead{\sc Reading Summary}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+% Begin document
+% --------------
+
+\begin{document}
+
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300} \\ 
+    [0.25in]
+    \huge{\bfseries Designing with the Mind in Mind} \\
+    [2mm]
+    \line(1,0){200} \\
+    [1.5cm] 
+    \textsc{\Large Chapters 13, 14, 15 and Appendix} \\
+    [0.75cm]
+    \textsc{\Large Reading Summary} \\
+    [12cm]
+    \end{center}
+    
+    \begin{flushright}
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ February 10, 2018 \\}\normalsize\emph{CS4474 \\} }
+    
+    \end{flushright}
+
+\end{titlepage}
+
+\newpage
+\shipout\null
+
+\hypertarget{chapter-13}{%
+\section{Chapter 13}\label{chapter-13}}
+
+\hypertarget{our-hand-eye-coordination-follows-laws}{%
+\subsection{Our Hand-Eye Coordination Follows
+Laws}\label{our-hand-eye-coordination-follows-laws}}
+
+\hypertarget{fitts-law-pointing-at-displayed-targets}{%
+\subsubsection{Fitts Law: Pointing at Displayed
+Targets}\label{fitts-law-pointing-at-displayed-targets}}
+
+The larger your target on the screen and the closer it is to your
+starting point, the faster you can reach it. The formula for this is T =
+a + b log(1+ D/W) where T is the time required to point to something, D
+is the distance, W is the width of the target. Applies to all pointing
+devices and all people. a and b are variables accounting for differences
+between people and pointing devices.
+
+Design implications
+
+\begin{itemize}
+\tightlist
+\item
+  Use decently sized click targets
+\item
+  Make the click-boxes big enough to not frustrate the user
+\item
+  Accept clicks on labels and graphics to improve hit rate
+\item
+  Use margins around click targets to avoid misclicks
+\item
+  Placing targets near the edge of the screen makes them easier to click
+\end{itemize}
+
+\hypertarget{steering-law-moving-pointers-along-constrained-paths}{%
+\subsubsection{Steering Law: Moving Pointers Along Constrained
+Paths}\label{steering-law-moving-pointers-along-constrained-paths}}
+
+Making users move a pointer along a narrow path is slower than allowing
+them a larger path to move the pointer. Design implications include
+making drop down menu entries wider and higher, avoiding pull-right
+menus and page rulers.
+
+This law mainly describes the absolute pain it is to use pull-right
+menus. That feeling when you are 4 clicks deep into a pull-right and you
+go off UI and have to restart.
+
+Scroll bars and page rulers are also another area where this problem is
+present.
+
+\hypertarget{chapter-14}{%
+\section{Chapter 14}\label{chapter-14}}
+
+\hypertarget{we-have-time-requirements}{%
+\subsection{We have Time Requirements}\label{we-have-time-requirements}}
+
+\hypertarget{responsivness-defined}{%
+\subsubsection{Responsivness defined}\label{responsivness-defined}}
+
+Responsiveness is how quickly a system responds to the user's
+interactions. A system can be responsive even with poor performance. You
+should use callbacks to let the UI continue operating and let the user
+know that something will finish. When a system isnt responsive it cant
+meet the time deadlines of the human.
+
+\hypertarget{time-constraints-for-the-human-brain}{%
+\subsubsection{Time constraints for the human
+brain}\label{time-constraints-for-the-human-brain}}
+
+1 milisecond is the shortest amount of silence you can detect. 5
+miliseconds is the shortest amount of time you can see a visual change
+to be effected by it 80 miliseconds is how long it takes you to flinch
+to something. Then it takes 100 miliseconds to fully process something
+you have seen. Your system has to react to an action within 140
+miliseconds (1.4 seconds) for the user to understand that their action
+had an effect on your system. Your attention takes 500 miliseconds to
+reset from one item to the next. It takes 700 miliseconds to do a motor
+action after observing something visual. Any gap in conversation longer
+than 1 second is awkward. A sub-mental task can take up to a maximum of
+10 seconds.
+
+Interactive systems need to keep the above constraints in mind when
+engineering.
+
+\hypertarget{hci-implications}{%
+\subsubsection{HCI implications}\label{hci-implications}}
+
+The guidelines for this chapter are:
+
+\begin{itemize}
+\tightlist
+\item
+  React to user interactions instantly
+\item
+  Indicate background processing
+\item
+  Use callbacks and dont hold UI in focus when processing
+\item
+  Animate smoothly
+\item
+  Allow users to cancel processing
+\item
+  provide a ETA for processing
+\end{itemize}
+
+Additional implications include - use busy indicators (spinning circles
+and loading bars) - Know when it is allowed to use a delay and when it
+will bother the user (sometimes its acceptable if they are doing
+something hard) - Display important data first and avoid delays by
+prompting for extra information instead of preprocessing everything for
+viewing - When the user is not doing anything directly, you can process
+information in the background and be ready for the next actions the user
+may take - Monitor how long your application has taken and if it falls
+into an acceptable time duration
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+\hypertarget{well-known-user-interface-design-rules}{%
+\section{Well-Known User Interface Design
+Rules}\label{well-known-user-interface-design-rules}}
+
+The following are the major tips compiled from all appendix items
+without duplicates
+
+\begin{itemize}
+\tightlist
+\item
+  Always provide the user feedback in a way that they cannot be confused
+  about the systems state
+\item
+  Different types of interactions should use different styles of menus
+  so they can be uniquely identified by the user in memory
+\item
+  Always provide the ability to undo actions
+\item
+  System should do stuff in a consistent way so the user has to remember
+  less of the system
+\item
+  Make the users feel like they are in control at all times.
+\item
+  Help users recover from errors instead of quitting and making them
+  restart
+\item
+  Provide lots of documentation for exploration
+\item
+  Function first, Presentation later
+\item
+  Design for common case not the complex case
+\item
+  Try stuff out on users, then fix it
+\end{itemize}
+
+\end{document}
+
