@@ -101,13 +101,59 @@
     \end{center}
     
     \begin{flushright}
-    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ February 10, 2018 \\}\normalsize\emph{CS4414 \\} }
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ February 11, 2018 \\}\normalsize\emph{CS4414 \\} }
     
     \end{flushright}
     
 \end{titlepage}
 
 \newpage
+
+\hypertarget{jot-notes}{%
+\subsection{Jot notes}\label{jot-notes}}
+
+\hypertarget{abstract}{%
+\subsubsection{Abstract}\label{abstract}}
+
+\begin{itemize}
+\tightlist
+\item
+  Forensics needs to be effective on databases that are configured
+  incorrectly and have no protection techniques integrated in them.
+  Sometimes they don't even have logging
+\item
+  Paper talks about a tool called DBCarver.
+\item
+  Reconstructs database context from a database image without using any
+  log or system data.
+\item
+  Uses page carving to reconstruct both query-able data and deleted
+  data.
+\item
+  Allows investigators to conduct new types of analysis on the data
+\end{itemize}
+
+\hypertarget{introduction}{%
+\subsubsection{Introduction}\label{introduction}}
+
+\begin{itemize}
+\item
+  Since most large applications use databases, large scale cyber crime
+  almost always involves databases.
+\item
+  A related concept is file carving, which retrieves files from storage
+  on a file system even if they are deleted or corrupted
+\item
+  Relational databases store data in pages
+\item
+  We can reconstruct pages to retrieve data
+\item
+  Targets extracting data maintained by the running database instead of
+  recovering original
+\item
+  Paper considers two scenarios, database is good or bad
+\item
+\end{itemize}
 
 \hypertarget{summary}{%
 \section{Summary}\label{summary}}

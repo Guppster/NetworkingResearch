@@ -22,6 +22,52 @@ indent: yes
 colorlinks: true
 ---
 
+## Jot notes
+
+### Abstract
+- Forensics needs to be effective on databases that are configured incorrectly
+  and have no protection techniques integrated in them. Sometimes they don't
+  even have logging
+- Paper talks about a tool called DBCarver. 
+- Reconstructs database context from a database image without using any log or
+  system data.
+- Uses page carving to reconstruct both query-able data and deleted data.
+- Allows investigators to conduct new types of analysis on the data
+
+### Introduction
+- Since most large applications use databases, large scale cyber crime almost
+  always involves databases.
+- A related concept is file carving, which retrieves files from storage on
+  a file system even if they are deleted or corrupted
+- Relational databases store data in pages
+- We can reconstruct pages to retrieve data
+- Targets extracting data maintained by the running database instead of
+  recovering original
+- Paper considers two scenarios, database is good or bad
+
+### Contribution and Related Work
+
+- Explain Page carving
+- Describe how to do sql analysis on data to solve real-world forensic problems
+- Evaluate performance of the tool itself
+- Other people have done work to prevent and detect database tampering but not
+  much has been done to actively reconstruct data from a damaged database to
+  find evidence
+- Many other methods assume logs and detection mechanisms exist and leverage
+  those to conduct an analysis which is not always possible in a real-world
+  scenario
+- This system leverages the fact that the metadata associated with the real
+  data isn't present but the data is still in good condition. 
+
+
+### Page Carving
+
+### Carver 
+
+
+
+
+
 # Summary
 
 # Strengths and Weaknesses
