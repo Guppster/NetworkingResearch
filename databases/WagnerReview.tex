@@ -137,6 +137,7 @@
 \subsubsection{Introduction}\label{introduction}}
 
 \begin{itemize}
+\tightlist
 \item
   Since most large applications use databases, large scale cyber crime
   almost always involves databases.
@@ -152,7 +153,125 @@
   recovering original
 \item
   Paper considers two scenarios, database is good or bad
+\end{itemize}
+
+\hypertarget{contribution-and-related-work}{%
+\subsubsection{Contribution and Related
+Work}\label{contribution-and-related-work}}
+
+\begin{itemize}
+\tightlist
 \item
+  Explain Page carving
+\item
+  Describe how to do sql analysis on data to solve real-world forensic
+  problems
+\item
+  Evaluate performance of the tool itself
+\item
+  Other people have done work to prevent and detect database tampering
+  but not much has been done to actively reconstruct data from a damaged
+  database to find evidence
+\item
+  Many other methods assume logs and detection mechanisms exist and
+  leverage those to conduct an analysis which is not always possible in
+  a real-world scenario
+\item
+  This system leverages the fact that the metadata associated with the
+  real data isn't present but the data is still in good condition.
+\end{itemize}
+
+\hypertarget{page-carving}{%
+\subsubsection{Page Carving}\label{page-carving}}
+
+\begin{itemize}
+\tightlist
+\item
+  Follows national regulations set out by the National Institute of
+  Justice
+\item
+  Three tasks that occur in an investigation are evidence acquisition,
+  evidence reconstruction, and evidence analysis.
+\item
+  The investigator's goal is to preserve all evidence
+\item
+  Assumptions are made about the running system and because it could be
+  dynamically changed the data associated with runtime cannot be
+  regarded valid for the investigation
+\end{itemize}
+
+\hypertarget{tool-overview}{%
+\subsubsection{Tool Overview}\label{tool-overview}}
+
+\begin{itemize}
+\item
+  Pages are the smallest unit of persistent storage in a relational
+  database.
+\item
+  DBCarver traverses pages within a desk image extracted from a
+  relational database and tries to identify data within those pages to
+  reconstruct evidence.
+\item
+  Consists of two components: the parameter detector and the carver
+\item
+  Parameter detector sets up a fake database using the specified
+  Database Management System and loads in some data. Then it extracts
+  the underlying identifying system configuration that indicates how the
+  data was stored for this specific type of DBMS.
+\item
+  The Parameter detector sets up the Carver using this configuration it
+  has generated as the seed. Then the Carver uses this information on
+  the real recovered data image to make sense of the data pages.
+\item
+  Paper states the parameter detector requires ``modest user
+  intervention''. Bad design redflag Requires making a wrapper class,
+  running sql commands, schema changes, etc
+\item
+  In most Database Management Systems the three major identifying
+  components for each page are page header, row directory, and row data.
+\item
+  The page header provides general information about the page and
+  regarding how it relates to the database as a whole
+\item
+  Row Directory helps index the data inside a single page. It can exist
+  in different places within a page for each DBMS. This directory will
+  have references to each of the separate Row Data entries.
+\item
+  Each individual Row Data entry will have the raw data and the status
+  in which the data was present. It will indicate if the data was
+  deleted or not.
+\item
+  The carver can then accept any type of data file of any size because
+  it is solely comparing against the criteria extracted by the parameter
+  detector
+\item
+  Carver is able to process multiple databases with multiple extracted
+  configurations concurrently
+\item
+  Is a command line utility with simple input and output commands
+\item
+  When input is a database image, a new database is created with the
+  recovered data.
+\item
+  When input is a RAM snapshot, the result is raw data present in the
+  working memory in the form of cache pages.
+\end{itemize}
+
+\hypertarget{experiments}{%
+\subsubsection{Experiments}\label{experiments}}
+
+\begin{itemize}
+\tightlist
+\item
+  Experiments were conducted with a well controlled environment meaning
+  the results should be indicative of the performance of the tool
+\item
+  Experiment 1 demonstrates creating a database and retrieving the
+  contents via carving
+\item
+  Experiment 2 shows how the performance of the tool scales up with
+  pages in database. It shows that the larger the database the longer it
+  will take to process per MB of data.
 \end{itemize}
 
 \hypertarget{summary}{%

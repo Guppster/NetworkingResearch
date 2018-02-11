@@ -59,14 +59,71 @@ colorlinks: true
 - This system leverages the fact that the metadata associated with the real
   data isn't present but the data is still in good condition. 
 
-
 ### Page Carving
 
-### Carver 
+- Follows national regulations set out by the National Institute of Justice
+- Three tasks that occur in an investigation are evidence acquisition, evidence
+  reconstruction, and evidence analysis.
+- The investigator's goal is to preserve all evidence
+- Assumptions are made about the running system and because it could be
+  dynamically changed the data associated with runtime cannot be regarded valid
+  for the investigation
 
+### Tool Overview
 
+- Pages are the smallest unit of persistent storage in a relational database.
+- DBCarver traverses pages within a desk image extracted from a relational
+  database and tries to identify data within those pages to reconstruct
+  evidence.
+- Consists of two components: the parameter detector and the carver
 
+- Parameter detector sets up a fake database using the specified Database
+  Management System and loads in some data. Then it extracts the underlying
+  identifying system configuration that indicates how the data was stored for
+  this specific type of DBMS. 
+- The Parameter detector sets up the Carver using this configuration it has
+  generated as the seed. Then the Carver uses this information on the real
+  recovered data image to make sense of the data pages.
 
+- Paper states the parameter detector requires "modest user intervention". Bad
+  design redflag Requires making a wrapper class, running sql commands, schema
+  changes, etc
+
+- In most Database Management Systems the three major identifying components
+  for each page are page header, row directory, and row data.
+
+- The page header provides general information about the page and regarding how
+  it relates to the database as a whole
+
+- Row Directory helps index the data inside a single page. It can exist in
+  different places within a page for each DBMS. This directory will have
+  references to each of the separate Row Data entries. 
+
+- Each individual Row Data entry will have the raw data and the status in which
+  the data was present. It will indicate if the data was deleted or not.
+
+- The carver can then accept any type of data file of any size because it is
+  solely comparing against the criteria extracted by the parameter detector
+
+- Carver is able to process multiple databases with multiple extracted
+  configurations concurrently
+
+- Is a command line utility with simple input and output commands
+
+- When input is a database image, a new database is created with the recovered
+  data.
+
+- When input is a RAM snapshot, the result is raw data present in the working
+  memory in the form of cache pages.
+
+### Experiments
+
+- Experiments were conducted with a well controlled environment meaning the
+  results should be indicative of the performance of the tool
+- Experiment 1 demonstrates creating a database and retrieving the contents via carving
+- Experiment 2 shows how the performance of the tool scales up with pages in
+  database. It shows that the larger the database the longer it will take to
+  process per MB of data.
 
 # Summary
 
