@@ -1,0 +1,29 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: true
+    fig_caption: true
+    template: ../templates/gsingh-basic.tex
+title: "Paper Review"
+subtitle: "Database Forensic Analysis with DBCarver"
+subsubtitle: ""
+
+runhead: "Paper Review"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4414
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Summary
+
+# Strengths and Weaknesses
+
+# Opinions

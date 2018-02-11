@@ -1,0 +1,119 @@
+\documentclass[11pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={Paper Review},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=blue,
+            urlcolor=blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% Stuff I added.
+% --------------
+
+\usepackage{indentfirst}
+\usepackage[doublespacing]{setspace}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{layout}   
+\lhead{\sc Paper Review}
+\chead{}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+% Begin document
+% --------------
+
+\begin{document}
+
+\doublespacing
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300} \\ 
+    [0.25in]
+    \huge{\bfseries Paper Review} \\
+    [2mm]
+    \line(1,0){200} \\
+    [1.5cm] 
+    \textsc{\Large Database Forensic Analysis with DBCarver} \\
+    [0.75cm]
+    \textsc{\Large } \\
+    [9cm]
+    \end{center}
+    
+    \begin{flushright}
+    \textsc{\Large{Gurpreet Singh \\}\normalsize\emph{\ February 10, 2018 \\}\normalsize\emph{CS4414 \\} }
+    
+    \end{flushright}
+    
+\end{titlepage}
+
+\newpage
+
+\hypertarget{summary}{%
+\section{Summary}\label{summary}}
+
+\hypertarget{strengths-and-weaknesses}{%
+\section{Strengths and Weaknesses}\label{strengths-and-weaknesses}}
+
+\end{document}
+
