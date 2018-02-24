@@ -1,0 +1,86 @@
+---
+output: 
+  pdf_document:
+    citation_package: biblatex
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../templates/gsingh-basic.tex
+title: "Project Proposal"
+subtitle: "Securing NoSQL databases using blockchains"
+subsubtitle: "MongoDB + ARK Blockchain"
+
+runhead: "Project Proposal"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4411
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Securing NoSQL databases using blockchains
+
+Introduction
+
+Must be 1-2 paragraphs:
+
+    Summarize the motivation (1-2 sentences)
+
+    Summarize the problem (1-2 sentences)
+
+    Summarize the solution (1-2 sentences)
+
+Motivation
+
+Must be 1-3 paragraphs:
+
+    What is the history of the problem?
+
+    Why is this problem interesting?
+
+    When and why does the problem occur?
+
+    Is the problem already solved? What is done now?
+
+    Are there any similar systems or solutions to the one you propose? If so, reference and very briefly explain them.
+
+    Are there are possible improvements to current solutions?
+
+    Where / how your solution will be used?
+
+Project Details
+
+What in general will this project achieve? How is it related to the previous Motivation part?
+
+    Architecture and Environment (2-3 paragraphs + figures/sketches)
+
+        Describe the project environment (software: libraries, frameworks, etc, hardware, organizations, etc.)
+
+        Diagrams and figures are useful here if appropriate.
+
+    Deliverables (3-5 paragraphs - point-form may be used for some of the description)
+
+        What will the project produce? (report, application, DB plugin, etc.)
+
+        Describe in relative detail all the features of the project.
+
+        You may wish to separate deliverables into phases and indicate optional components given time.
+
+        Indicate if you can't deliver all the features but will be working on the project in the future.
+
+        Emphasize what your project contributes or achieves!
+
+Conclusion
+
+Must be 1 paragraph
+
+    Summarize the project including the problem, motivation, and proposed solution, and re-state important (planned) contributions.
+
+References
+
+    List references used to compile proposal and references that will be used for project (if already known).
+
