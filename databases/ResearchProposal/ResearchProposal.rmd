@@ -13,7 +13,7 @@ subsubtitle: "MongoDB + ARK Blockchain"
 
 runhead: "Project Proposal"
 author:
-- name: Jerpet, PB&J, FidgetAlferoSpinner
+- name: Gurpreet, Paul and Fernando
   affiliation: CS4411
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
@@ -24,7 +24,7 @@ colorlinks: true
 
 # Securing NoSQL databases using blockchains
 
-### Introduction (1-2 paragraphs)
+### Introduction 
 
 The contents of a modern production database should be secure and interactions
 should be easily verifiable. We would like to propose a solution that strengthens
@@ -42,21 +42,47 @@ will then be hashed and stored on the blockchain to a corresponding address.
 This functionality could then be automated to check the database's secured
 queries periodically to effectively secure it.
 
-### Motivation (1-3 paragraphs)
+### Motivation 
 
-    What is the history of the problem?
+The motivation for combining these two technologies into a security solution
+comes from pre-existing database logging functionality. The common way to trace
+back the interactions that occur within a database management system is to look
+at its logs. Databases systems have the ability to disable logs or only record
+logs up to a specific error level. When relying on these logs to make sure no
+malicious activity has taken place, the investigator has to assume and hope
+that the logging is setup correctly and no one disabled it or tampered with it
+during the attack. This is where the problem arises; there is no completely
+secure way to verify the state of a database and ensure no one has tampered
+with the documents. 
 
-    Why is this problem interesting?
+Databases provide fast and reliable data storage systems, and blockchain
+provide secure, distributed and immutable data storage. The problem is
+interesting because it has to potential to leverage the best qualities of both
+these technologies and improve data storage all together. 
 
-    When and why does the problem occur?
+The idea of using a blockchain to secure the data stored in other types of
+storage systems has been attempted by a web service called Tierion using their
+token TNT. This system provides end points where you can send a hash and it
+sends back a timestamp ensuring it has been pushed to a blockchain. A downside
+to this system is that it is a Software as a Service (SAAS) and therefore costs
+money to use on a large scale deployment. Private companies may not wish to
+have to send hashes of their data to an external service and Tierion does not
+allow for you to deploy your own instance of their system. The system itself is
+not very impressive either as it just provides a simple interface to the
+Bitcoin and Ethereum blockchains, neither of which are setup to handle such
+a task. Both BTC and ETH have long transaction times and were developed with
+a different purpose in mind. Tierion can take more than 10 minutes to push
+a hash to one of the chains which is too slow for an automated system.  The
+idea is much better suited to data oriented blockchains such as the own we will
+be using called Ark. Ark has 7 second block times which will allow fast
+automated processing.
 
-    Is the problem already solved? What is done now?
+Ark is a Delegated Proof of Stake (DPOS) blockchain which allows transactions
+to carry a small amount of data. Each transaction has more than enough space to
+carry the hash of a single document. Using this free and open source blockchain
+also allows us to run a local instance which means we don't have to pay to
+secure our data and no information is exposed to the outside world.
 
-    Are there any similar systems or solutions to the one you propose? If so, reference and very briefly explain them.
-
-    Are there are possible improvements to current solutions?
-
-    Where / how your solution will be used?
 
 ### Project Details (2-3 paragraphs design, 3-5 paragraphs deliverables)
 
