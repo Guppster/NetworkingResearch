@@ -1,0 +1,261 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../../templates/gsingh-HCI.tex
+title: "Universal Principles of Design"
+subtitle: "Part 1"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# How Can I Influence The Way a Design is Perceived
+
+### Affordance
+
+Guides how the physical characteristics of an object can change its function.
+Choosing good physical elements for your object can allow it to better afford
+the task you want the user to accomplish. A circle affords rolling better than
+a square. A handle affords pulling, a flat plate affords pushing on doors.
+Creating objects in user interfaces that people see in the real world allow
+them to understand what that object can afford
+
+### Alignment
+
+Items in a design should be aligned in a way that everything line up and looks
+consistent. It should also help the user follow the page as they follow the
+line with their eyes. Angles between alignments need to be greater than 30
+degrees or humans cannot detect the difference very well
+
+### Anthromorphic Form
+
+Elements that have human like characteristics are liked by humans. If it looks
+like a face, a body, or a human body part, it will attract more attention than
+something that isnt anthromorphic
+
+### Closure
+
+Is an effect that occurs when an element is a pattern that is easily
+recognizable by the user. Instead of decomposing the element into its
+individual smaller elements the user sees the pattern as one whole single
+element. This is good for reducing complexity because if people recognize
+something, you can put less detail into designing its appearance. 
+
+### Color
+
+Can be used in every element of design to enhance it's effects. Can also harm
+the design if applied improperly. Remember to limit the number of colors you
+use, make sure you are using good color combinations, determine how the
+saturation effects peoples perception, and check for symbolism of colors for
+you target audience.
+
+### Common Fate
+
+When elements move in a similar direction users think they are grouped. 
+Overpowers other grouping that is already taking place.
+
+### Consistency 
+Give elements consistent styling.
+
+### Constancy
+An effect where we understand the object's qualities even when we see them
+under different circumstances. We see someone from a distance, and then we see
+them when they are closer, but we understand that they are still the same size
+even though they appear bigger
+
+### Contour Bias
+
+People are subconsciously scared of sharp edges, use round edges to make people
+happy
+
+### Face-ism Ratio
+
+Changing how much of an image the person's face takes up can have different
+effects on the viewer. If low faceism then focus on the physical qualities, if
+high faceism ratio then focus on mental qualities.
+
+### Figure-Ground Relationship
+
+Figures are things in focus, ground is everything else in an image. Make sure
+you clearly differentiate between the two when creating a design so the viewer
+doesnt get lost
+
+### Five Hat Racks
+Five ways to organize information
+
+Category: A CATEGORY
+
+Time: When something happened
+
+Location: Where it happened
+
+Alphabet: What the thing starts with
+
+Continuum: Highest to lowest, best to worst
+
+### Good Continuation
+
+When elements are placed in a straight or curved line they are considered to be
+in a group by the viewer. Example: Speedometer
+
+### Gutenberg Diagram
+
+Cuts the screen into 4 quads. People read better when stuff is in the primary
+area.
+
+At Top: Primary optical area, strong fallow area
+
+At bottom: Weak fallow area, terminal area
+
+### Highlighting
+
+Highlight something by blinking, coloring, bold/italics/underlining, or
+inversing to show something important and bring it to attention. Don't
+highlight more than 10 percent of the page
+
+### Horror Vacui
+
+Fear of empty spaces, opposite of minimalism. Poorer, less educated audiences
+prefer to have a packed page. Educated people prefer minimalism.
+
+### Iconic Representation
+
+Use an image to represent some data. There are 4 type.
+
+Similar icons: images that directly show an action or event (road sign,
+upcoming turn)
+
+Example icons: an image that indirectly points to an action or event (airplane
+for a airport)
+
+Symbolic icons: Very high level concepts. (using padlock to show a locking
+button)
+
+Arbitrary icons: No association to action or event, connection has to learned.
+(radiation sign)
+
+### Inattentional Blindness
+
+Not seeing something on the page when you are more focused on something else.
+Consider this when attention is very important in your design
+
+### Interference Effects
+
+When the user is thinking about more than one thing at a time, it causes them
+to be slower. 4 types.
+
+Stroop Interference: Irrelevant element conflicts with a relevant element.
+(harder to name colors if the word is in a different color)
+
+Garner Interference: Irrelevant VARIATION of element conflicts with relevant
+element. If an element is placed near changing elements, processing will be
+slower
+
+Proactive Interference: Past memories conflict with current learning.
+
+Retroactive Interference: Learning new things messes with memory of old things.
+(new phone number messing up old one)
+
+### Law of Pragnanz
+
+When people are shown something ambiguous, they will choose the simplest way to
+process it. They will think it has way less elements than it actually does.
+This means you should try to minimize the number of elements in a design
+
+### Layering
+
+Involves presenting one group of information at a time. Three dimensional
+layering allows the user to view more than one layer at a time If you have
+a high level of complexity, you layering to present it in chunks the user can
+manage
+
+### Legibility
+
+Using text size, typeface, contrast, blocking and spacing to make sure it is
+easily readable and providing value to the viewer
+
+### Mapping
+
+Refers to how a control causes an action. Good mapping is when what you expect
+to happen, happens, Bad mapping is when something happens that you didn't
+expect when you triggered a control. Always try to have good mapping so the
+user isn't confused and can use your application easier
+
+### Orientation Sensitivity
+
+Lines that are closer to horizontal or vertical are easier to accurately
+perceive. Elements can pop out if the line is greater than 30 degrees separated
+from other lines.
+
+### Priming
+
+Priming the brain for another activity. Prepares it for something different.
+ex. Showing a picture of a drink before the movie. It will make people thirsty
+
+### Proximity
+
+Same as grouping, elements that are close to each other physically are
+considered to be related 
+
+### Red Effect
+
+The color red is sexual and attracts people. Causation is not fully understood.
+Use it to attract attention.
+
+### Signal-to-Noise ratio
+
+A ratio between how much useful information is on a page compared to how much
+useless information is on the page. You always want the highest signal to noise
+ratio
+
+### Threat Detection
+
+You can detect things better if they are a threat to you. Consider dangerous
+looking shapes or images to attract the viewers attention quickly
+
+### Three-Dimensional Projection
+
+An effect where the viewer sees things in 3D when presented the right way.
+This can be achieved by:
+
+- Overlapping two objects to show one further away
+- Showing one object larger than the other
+- Showing two objects at different vertical height
+- Converging lines show depth
+- High density texture looks further away then low density
+- Shaded areas look further away
+- Blue and blurry objects appear to be further away
+
+### Top-Down Lighting Bias
+
+Shading or dark areas near elements indicate a light source above the element.
+Make sure you have consistent shading based on a light source or you could 
+confuse the viewer
+
+### Uniform Connectedness
+
+You can group elements together by giving them one common quality between each
+element. For example make them all one color.
+
+### Visibility
+
+An interface becomes easier to use if its controls, and statuses are easy to
+view at all times
+
+### Visuospacial Resonance
+
+The concept of achieving the best possible image quality for the observers
+distance. Always consider the distance the user will be viewing your design at.
