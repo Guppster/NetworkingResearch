@@ -31,13 +31,13 @@ should be easily verifiable. We would like to propose a solution that strengthen
 the security of modern NoSQL databases using bleeding edge blockchain solutions.
 
 In current database management software, the only way to verify the
-interactions that occur within a database is checking the log created by the
+interactions that occur within a database is by checking the log created by the
 system. The problem is that logging can easily be disabled or reduced to
 a level where malicious actions could occur without leaving a trace. 
 
 The solution we are proposing is to use hashing to capture the active state of
 a Mongo database and use an Ark blockchain to verify it's integrity. We would
-like to be able to specify a query resulting in a set of documents, the result
+like to be able to specify a query resulting in a set of documents. The result
 will then be hashed and stored on the blockchain to a corresponding address.
 This functionality could then be automated to check the database's secured
 queries periodically to effectively secure it.
@@ -47,15 +47,15 @@ queries periodically to effectively secure it.
 The motivation for combining these two technologies into a security solution
 comes from pre-existing database logging functionality. The common way to trace
 back the interactions that occur within a database management system is to look
-at its logs. Databases systems have the ability to disable logs or only record
+at its logs. Database systems have the ability to disable logs or only record
 logs up to a specific error level. When relying on these logs to make sure no
-malicious activity has taken place, the investigator has to assume and hope
-that the logging is setup correctly and no one disabled it or tampered with it
+malicious activity has taken place, the investigator has to assume
+that the logging is setup correctly and no one disabled or tampered with it
 during the attack. This is where the problem arises; there is no completely
 secure way to verify the state of a database and ensure no one has tampered
 with the documents. 
 
-Databases provide fast and reliable data storage systems, and blockchain
+Databases provide fast and reliable data storage systems and blockchains
 provide secure, distributed and immutable data storage. The problem is
 interesting because it has to potential to leverage the best qualities of both
 these technologies and improve data storage all together. 
@@ -69,7 +69,7 @@ money to use on a large scale deployment. Private companies may not wish to
 have to send hashes of their data to an external service and Tierion does not
 allow for you to deploy your own instance of their system. The system itself is
 not very impressive either as it just provides a simple interface to the
-Bitcoin and Ethereum blockchains, neither of which are setup to handle such
+Bitcoin and Ethereum blockchains, neither of which are set up to handle such
 a task. Both BTC and ETH have long transaction times and were developed with
 a different purpose in mind. Tierion can take more than 10 minutes to push
 a hash to one of the chains which is too slow for an automated system.  The
@@ -80,7 +80,7 @@ automated processing.
 Ark is a Delegated Proof of Stake (DPOS) blockchain which allows transactions
 to carry a small amount of data. Each transaction has more than enough space to
 carry the hash of a single document. Using this free and open source blockchain
-also allows us to run a local instance which means we don't have to pay to
+also allows us to run a local instance, which means we don't have to pay to
 secure our data and no information is exposed to the outside world.
 
 
@@ -92,12 +92,12 @@ the local machine. The project will consist of a Mongo database and a local
 deployment of an Ark blockchain. Unless complications come up with the
 platform, we are planning on using the Ruby language to develop the command
 line utility. Since we are using Ruby, we will be using the open source
-ark-ruby library to interact with the Ark blockchain and the official ruby
-mongodb driver to interact with the database.
+ark-ruby library to interact with the Ark blockchain and the official MongoDB 
+Ruby driver to interact with the database.
 
 The system will work by first prompting the user for a query to obtain a set of
 documents. The set of documents will then be hashed and a corresponding address
-on the Ark blockchain will be allocated for this query. The hash will of the
+on the Ark blockchain will be allocated for this query. The hash of the
 set will be pushed in the form of a transaction to that specific address from
 a central blockchain management address (BCMA) which will act as one of the
 forging delegates and therefore always have funds to process the transaction.
@@ -105,7 +105,7 @@ The transaction ID returned from the blockchain interaction will be stored back
 into the database in a control document storing the state of each secured set
 of documents so later on we can validate against this.
 
-In this project we would like to deliver the functionality to manually make
+In this project we would like to deliver the functionality to 
 manually validate queries and detect tampering. The final deliverable will be
 the command line utility allowing the user to seamlessly interact with the
 entire system. If time permits, as an optional component, we would continue to
@@ -121,6 +121,14 @@ data storage and a NoSQL database.
 
 Summarize the project including the problem, motivation, and proposed solution,
 and re-state important (planned) contributions.
+
+Currently, database logging isn't a completely reliable way to verify if someone
+has tampered with the documents in a database. By combining databases fast and
+reliable data storage and blockchains secure, distributed and immutable data
+storage, we would be able to secure a locally stored traditional database without
+compromizing much of the speed of the database system. By choosing Ark as our 
+blockchain technology, we will be able to deliver a feasable solution for
+securing databases.
 
 ### References
 
