@@ -1,0 +1,147 @@
+---
+output: 
+  pdf_document:
+    citation_package: biblatex
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../templates/gsingh-basic.tex
+title: "Game Critique"
+subtitle: "Donkey Kong Country"
+subsubtitle: "CS4483"
+
+runhead: "Project Critique"
+author:
+- name: Gurpreet Singh
+  affiliation: 250674134
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# Donkey Kong Country
+
+## General Information
+
+### Name and Developers
+Donkey Kong Country is the game I will be reviewing. It is developed by Rare and published by Nintendo. 
+
+### Platform
+Donkey kong country was available for play on SNES, Game Boy Color, Gameboy
+Advanced and most modern Nintendo consoles as a virtual game. The platform
+I will be reviewing the game on is Gameboy Advanced. 
+
+### Genre & Target Market
+The main genre of this game is Platformer. Donkey Kong Country targets
+children and teenagers with its low game complexity and difficult
+level design. 
+
+## Game Overview
+
+### Core Gameplay
+The core game play of Donkey Kong Country involved two monkeys, Donkey Kong and
+Diddy Kong, traveling between platforming levels and collecting bananas with an
+occasional mini-game. The player finds these levels by traveling on a world map
+from one destination to another. There are 40 different levels where the user
+must collect bananas and defeat monsters by jumping on their heads. Most levels
+involve many unique movement mechanics and a unique theme. The player can ride
+mounted animals, swing from ropes, be launched out of a barrel and swim to get
+to the end of the level. The player can find special hidden levels by running
+into walls or jumping off screen. These levels allow you to collect a large
+amount of bananas while you are playing as a rhino, shark, frog, or bird. The
+mini-games also allow you to earn more bananas and get KONG letters. Some
+mini-games include funky fishing, a fishing game where you had to time your
+fishing hook to catch the most fish, and candy's challenge, where you had to
+jump into boxes at the right time to get a matching symbol. 
+
+### Visual and Audio style
+The visual style of the game is simple with elaborate movement animations on
+the characters. The background for most of the levels is a repeating image with
+a single style of texture for the obstacles. The characters and monsters have
+many well animated movements which are seen when they jump, walk, swim or mount
+an animal. The audio used in the game is very detailed and always fits the
+theme of the map. Each different style of map has it's own music style which
+helps the user feel more integrated into the environment and each character has
+its own unique movement sounds. 
+
+### Controls
+Donkey Kong Country had very simple controls. The left and right arrow keys
+allowed your character to run in the specified direction, the down arrow key
+allowed the character to duck, the A key allowed the character to jump and the
+B key lets the character roll left or right. The difficulty of the game came
+from timing these simple movements controls to get your character to the
+destination.
+
+### Story
+The story behind the whole game is based around a missing stash of bananas.
+Donkey Kong goes to his storage of bananas to find that they have been stolen.
+Then he sets out on a journey to recover his bananas. The different animals
+that Donkey Kong can ride or become in mini-games are his friends in the story
+and are there to help him recover his bananas.
+
+## Game Critique
+
+I found the game to be quite fun because the levels were fast paced and
+challenging. However, they became repetitive in terms of level design.
+Although, the game did provide a variation of themes to be progressed though,
+the levels inside one particular theme felt repetitive. 
+
+The difficulty of the levels in Donkey Kong Country varied. Some levels were
+easy and could be finished in minutes. Others took practice and required
+several attempts at the level. This variation kept the player alert and ready
+for new challenges. 
+
+I played Donkey Kong Country years ago on my Gameboy Advanced when it first
+came out. It was one of my first games on the Gameboy Advanced and took me
+a long time to beat the first time. I now played the game again and enjoyed
+different elements of the game. On my first play of the game I remember being
+frustrated at the difficult levels but enjoying the mini-games a lot. On my
+recent playthrough, I enjoyed the difficulty much more and still had a lot of fun 
+finishing the game.
+
+Therefore, I believe this is a good game for the tarket market of children and
+teenagers because it doesn't require too much attention and provides instant
+gratification. Different age groups will enjoy different parts of the game.
+
+If I had to describe Donkey Kong Country in one word, it would be 'Addictive'
+because the difficult levels and fun music make the player want to keep trying
+until they finally finish the level. 
+
+The challenging levels will motivate the players to keep on trying until they
+are able to finish the level. I think this game provides a higher level of
+difficulty compared to other platformers of the same era. 
+
+Something innovative about Donkey Kong Country is the quality if vivid graphics
+they were able to provide in that generation. Other than that the fast-paced
+side scroller builds upon an established formula and does it with good
+execution. 
+
+A key strength of Donkey Kong Country is that it provided short and challenging
+levels that allowed me to pick up the game on a mobile platform and quickly
+begin enjoying a side scroller without too much story or waiting. 
+
+The key deficits of Donkey Kong Country was the repetitive feeling when you
+couldn't beat the level and the only thing to do in the game was to retry the
+same level over and over again. 
+
+One improvement Donkey Kong Country could have implemented to fix the problem
+of repetitive hard levels is providing more unique paths in the world view
+map so a player could try another path if they are stuck on a specific level.
+
+## Final Analysis
+
+One major insight I gained from playing Donkey Kong Country, in respect to my
+team's game design project, is the use of the world view map. In this game the
+world view map was very strict and didn't allow the player to define their own
+path. I really didn't like this and I think in our game design project we
+should give the user multiple choices of levels they want to start on the world
+view map. Giving the player more options will be harder to implement because it
+will result in unexpected paths, but it will ultimately be more enjoyable.
+
+Another way this game can influence our game design project is with their use
+of mini-games. Currently our team hasn't discussed anything other than the core
+fundamental game-play but later on we could consider including some mini-games
+to further increase the play experience.
