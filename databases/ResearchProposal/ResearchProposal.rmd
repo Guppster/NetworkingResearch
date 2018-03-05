@@ -83,8 +83,7 @@ carry the hash of a single document. Using this free and open source blockchain
 also allows us to run a local instance, which means we don't have to pay to
 secure our data and no information is exposed to the outside world.
 
-
-### Project Details (2-3 paragraphs design, 3-5 paragraphs deliverables)
+### Project Details 
 
 We would like to design this project as a command line utility which allows the
 user to easily hash and validate the contents of a Mongo database running on
@@ -117,10 +116,7 @@ the cryptographic power of blockchains to secure a locally stored traditional
 database. It provides a unique approach in between a fully blockchain based
 data storage and a NoSQL database.
 
-### Conclusion (1 paragraph)
-
-Summarize the project including the problem, motivation, and proposed solution,
-and re-state important (planned) contributions.
+### Conclusion 
 
 Currently, database logging isn't a completely reliable way to verify if someone
 has tampered with the documents in a database. By combining databases fast and
