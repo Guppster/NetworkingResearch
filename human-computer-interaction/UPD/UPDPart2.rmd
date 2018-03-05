@@ -1,0 +1,154 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../../templates/gsingh-HCI.tex
+title: "Universal Principles of Design"
+subtitle: "Part 2"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# How Can I Help People Learn From a Design
+
+### Accessibility
+
+States that the artifact designed should be usable by all type of people. Even
+people with visual or auditory disabilities. 
+The four characteristics of accessibility in terms of design are:
+
+- Perceptibility
+
+  Is when everyone can see the design.
+
+- Operability
+
+  Is when everyone can make use of the design.
+
+- Simplicity
+
+  Is when everyone can understand the design and it's usage.
+
+- Forgiveness
+
+  Is when designs allow the users to make mistakes and still continue with
+  a good user experience
+
+### Advance Organizer
+
+Is a grouped information chunk that puts people into a context where they can
+apply their previous knowledge to understand something new. The two kinds of
+these are expository and comparative. Expository is used in completely new
+material where the user has no previous knowledge. ex. learning what a car does
+before learning how to drive it. Comparative is the opposite in terms of
+learning, it shows the person how they can use their previous knowledge in
+a new situation. ex. teaching a car driver how to drive a van.
+
+### Chunking
+
+Grouping information. Chunk is formed if the information in a chunk is not
+closely related to that of another chunk.
+
+### Classical Conditioning
+
+When you can trigger a physical or emotional reaction from a person using some
+kind of stimulus. Use this to help users predict your system.
+
+### Comparison
+
+Literally a comparison between two or more things to show the difference or
+similarity.
+
+### Depth of Processing
+
+When someone spends more time analyzing information deeply, they can remember
+it better than if they had only done a light processing on that information.
+
+### Forgiveness
+
+Using feedback and good design a user should be able to quickly recover from an
+error without consequences. Somethings that can help with forgiveness are: good
+affordances, reversibility of actuons, safety nets, confirmations, warnings and
+a help option
+
+### Garbage In - Garbage Out
+
+If a user enters garbage input, it will result in garbage output. Therefore
+always help your user enter in the correct input by using verification and
+input checking
+
+### Hierarchy
+
+Showing which artifacts inherit from which other ones allows the user to have
+a better understanding of how the system works which results in a better user
+experience.
+
+### Immersion
+
+When you like the user experience so much you forget about the real world.
+
+### Mental Model
+
+A user creates a representation of the system in his mind by using their
+previous experiences. When people look at the results of interactions with real
+life events that align with a systems mental model, they can better predict how
+the system will react to their inputs.
+
+### Mnemonic Device
+
+When there is a lot of information to remember for the user you can make use of
+rhyming, keywords, first-letter representations, and feature names to help them
+reorganize the information so they have a easier time remembering it.
+
+### Operant Conditioning
+
+You can control the users behavior habits by using positive reinforcement when
+they do a good action and negative consequences when they do a bad action. 
+ex. Shocking a dog, etc
+
+### Performance Load
+
+The more you demand from a user the higher the chance that the user will give
+up and the task will not be completed. Two types are cognitive load (mental) or
+kinematic load (physical).
+
+### Picture Superiority Effect
+
+People have a easier time remembering pictures than they do remembering text or
+other forms of information. 
+
+### Progressive Disclosure
+
+Showing more information and options only when required and keeping them hidden
+when they are not applicable
+
+### Readability
+
+Important factors here are: word length, word frequency, sentence length, and
+number of syllables and clauses in a sentence. Just means how easily the user
+can read and understand your text or information
+
+### Recognition over Recall 
+
+It is easier for users to identify things they have already seen when
+represented to them than it is for them to recall it without any hints or
+stimulus.
+
+### Serial Position Effects
+
+Classic presentation order. People remember things that happen first or last
+and nothing in-between. Usually the reason people want to present somewhere in
+the middle of a presentation session.
