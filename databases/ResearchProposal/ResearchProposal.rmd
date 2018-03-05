@@ -130,3 +130,7 @@ securing databases.
 
 List references used to compile proposal and references that will be used for project (if already known).
 
+Wayne Vaughan, Jason Bukowski, and Glenn Rempe. "A global platform for verifiable data". https://tokensale.tierion.com/. February 25, 2018. https://tokensale.tierion.com/TierionTokenSaleWhitePaper.pdf.
+
+The ARK Crew. "A Platform for Consumer Adoption". https://ark.io/. February 25, 2018. https://ark.io/Whitepaper.pdf
+
