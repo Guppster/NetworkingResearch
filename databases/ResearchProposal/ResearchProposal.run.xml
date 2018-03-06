@@ -78,5 +78,8 @@
     <requires type="dynamic">
       <file>ResearchProposal.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>bibliography.bib</file>
+    </requires>
   </external>
 </requests>

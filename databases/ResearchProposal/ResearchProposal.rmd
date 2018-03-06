@@ -19,6 +19,7 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 geometry: margin=1in
 fontsize: 11pt
 indent: yes
+bibliography: bibliography.bib
 colorlinks: true
 ---
 
@@ -62,7 +63,7 @@ these technologies and improve data storage all together.
 
 The idea of using a blockchain to secure the data stored in other types of
 storage systems has been attempted by a web service called Tierion using their
-token TNT. This system provides end points where you can send a hash and it
+token TNT [@Tierion]. This system provides end points where you can send a hash and it
 sends back a timestamp ensuring it has been pushed to a blockchain. A downside
 to this system is that it is a Software as a Service (SAAS) and therefore costs
 money to use on a large scale deployment. Private companies may not wish to
@@ -78,7 +79,7 @@ be using called Ark. Ark has 7 second block times which will allow fast
 automated processing.
 
 Ark is a Delegated Proof of Stake (DPOS) blockchain which allows transactions
-to carry a small amount of data. Each transaction has more than enough space to
+to carry a small amount of data [@ARK]. Each transaction has more than enough space to
 carry the hash of a single document. Using this free and open source blockchain
 also allows us to run a local instance, which means we don't have to pay to
 secure our data and no information is exposed to the outside world.
@@ -125,12 +126,4 @@ storage, we would be able to secure a locally stored traditional database withou
 compromizing much of the speed of the database system. By choosing Ark as our 
 blockchain technology, we will be able to deliver a feasable solution for
 securing databases.
-
-### References
-
-List references used to compile proposal and references that will be used for project (if already known).
-
-Wayne Vaughan, Jason Bukowski, and Glenn Rempe. "A global platform for verifiable data". https://tokensale.tierion.com/. February 25, 2018. https://tokensale.tierion.com/TierionTokenSaleWhitePaper.pdf.
-
-The ARK Crew. "A Platform for Consumer Adoption". https://ark.io/. February 25, 2018. https://ark.io/Whitepaper.pdf
 
