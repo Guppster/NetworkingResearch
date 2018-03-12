@@ -1,0 +1,212 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../../templates/gsingh-HCI.tex
+title: "Universal Principles of Design"
+subtitle: "Part 3"
+subsubtitle: "Reading Summary"
+
+runhead: "Reading Summary"
+author:
+- name: Gurpreet Singh
+  affiliation: CS4474
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+# How Can I Enhance The Usability of a Design
+
+### 80/20 Rule
+
+### Accessibility
+
+States that the artifact designed should be usable by all type of people. Even
+people with visual or auditory disabilities. 
+The four characteristics of accessibility in terms of design are:
+
+- Perceptibility
+
+  Is when everyone can see the design.
+
+- Operability
+
+  Is when everyone can make use of the design.
+
+- Simplicity
+
+  Is when everyone can understand the design and it's usage.
+
+- Forgiveness
+
+  Is when designs allow the users to make mistakes and still continue with
+  a good user experience
+
+### Aesthetic-Usability Effect
+
+Designs that look good to the user are easier to use for them than designs that 
+don't look good. Aim to follow new design trends as that is what sets what
+looks good.
+
+### Affordance
+
+Guides how the physical characteristics of an object can change its function.
+Choosing good physical elements for your object can allow it to better afford
+the task you want the user to accomplish. A circle affords rolling better than
+a square. A handle affords pulling, a flat plate affords pushing on doors.
+Creating objects in user interfaces that people see in the real world allow
+them to understand what that object can afford
+
+### Confirmation
+
+Requiring the user to confirm their actions when they are about to do something
+dangerous with negative consequences.
+
+### Consistency
+Give elements consistent styling.
+
+### Constraint
+
+Reducing the amount of actions that can be preformed on an artifact to improve 
+the user experience for the limited set of operations that remain
+
+### Control
+
+The level of fine detail and operational control inside an artifact is directly
+related to the skill and experience levels of the target market.
+
+### Cost-Benefit
+
+Assessing financial return of further optimizing design. Don't focus on things
+no one will ever use.
+
+### Entry Point
+
+The first point of contact for an artifact with a real user.
+
+### Fitts' Law
+
+Further away a target and smaller it is, it makes it harder to move a pointing
+device to it.
+
+### Forgiveness
+
+Using feedback and good design a user should be able to quickly recover from an
+error without consequences. Somethings that can help with forgiveness are: good
+affordances, reversibility of actuons, safety nets, confirmations, warnings and
+a help option
+
+### Hick's Law
+
+When a user is presented with many options, the more options there is the longer
+they will take to make a decision.
+
+### Hierarchy
+
+Showing which artifacts inherit from which other ones allows the user to have
+a better understanding of how the system works which results in a better user
+experience.
+
+### Iconic Representation
+
+Use an image to represent some data. There are 4 type.
+
+Similar icons: images that directly show an action or event (road sign,
+upcoming turn)
+
+Example icons: an image that indirectly points to an action or event (airplane
+for a airport)
+
+Symbolic icons: Very high level concepts. (using padlock to show a locking
+button)
+
+Arbitrary icons: No association to action or event, connection has to learned.
+(radiation sign)
+
+### Immersion
+
+When you like the user experience so much you forget about the real world.
+
+### Interference Effects
+
+When the user is thinking about more than one thing at a time, it causes them
+to be slower. 4 types.
+
+Stroop Interference: Irrelevant element conflicts with a relevant element.
+(harder to name colors if the word is in a different color)
+
+Garner Interference: Irrelevant VARIATION of element conflicts with relevant
+element. If an element is placed near changing elements, processing will be
+slower
+
+Proactive Interference: Past memories conflict with current learning.
+
+Retroactive Interference: Learning new things messes with memory of old things.
+(new phone number messing up old one)
+
+### Layering
+
+Involves presenting one group of information at a time. Three dimensional
+layering allows the user to view more than one layer at a time If you have
+a high level of complexity, you layering to present it in chunks the user can
+manage
+
+### Mapping
+
+Refers to how a control causes an action. Good mapping is when what you expect
+to happen, happens, Bad mapping is when something happens that you didn't
+expect when you triggered a control. Always try to have good mapping so the
+user isn't confused and can use your application easier
+
+### Mental Model
+
+A user creates a representation of the system in his mind by using their
+previous experiences. When people look at the results of interactions with real
+life events that align with a systems mental model, they can better predict how
+the system will react to their inputs.
+
+### Mimicry
+
+Copying objects from the real world so the user knows what the virtual object
+can afford.
+
+### Performance Load
+
+The more you demand from a user the higher the chance that the user will give
+up and the task will not be completed. Two types are cognitive load (mental) or
+kinematic load (physical).
+
+### Progressive Disclosure
+
+Showing more information and options only when required and keeping them hidden
+when they are not applicable
+
+### Readability
+
+Important factors here are: word length, word frequency, sentence length, and
+number of syllables and clauses in a sentence. Just means how easily the user
+can read and understand your text or information
+
+### Recognition over recall
+
+It is easier for users to identify things they have already seen when
+represented to them than it is for them to recall it without any hints or
+stimulus.
+
+### Signal-to-noise
+
+A ratio between how much useful information is on a page compared to how much
+useless information is on the page. You always want the highest signal to noise
+ratio
+
+### Visibility
+
+An interface becomes easier to use if its controls, and statuses are easy to
+view at all times
