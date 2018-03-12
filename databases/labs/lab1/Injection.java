@@ -9,7 +9,7 @@ public class Injection {  // Save as "JavaProject"
       try (
          // Step 1: Allocate a database "Connection" object
          Connection conn = DriverManager.getConnection(
-               "jdbc:mysql://127.0.0.1:3306/lab1?useSSL=false", "webuser", "student"); // MySQL
+               "jdbc:mysql://135.0.85.147:3306/lab1?useSSL=false", "webuser", "student"); // MySQL
  
          // Step 2: Allocate a "Statement" object in the Connection
          Statement stmt = conn.createStatement();
