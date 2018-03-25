@@ -14,7 +14,7 @@ public class JavaProject2 {
       try (
          // Step 1: Allocate a database "Connection" object
          Connection conn = DriverManager.getConnection(
-               "jdbc:mysql://135.0.85.147:3306/lab1?useSSL=false", "webuser", "student"); // MySQL
+               "jdbc:mysql://135.0.85.147:3306/lab1?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "webuser", "student"); // MySQL
  
          // Step 2: Create a "Prepared Statement" object in the Connection
          PreparedStatement pstmt = conn.prepareStatement("select name, major, grade from students where grade> ?");

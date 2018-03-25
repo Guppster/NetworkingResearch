@@ -46,7 +46,7 @@ SELECT title,
   (SELECT name from category WHERE category_id IN
     (SELECT category_id FROM film_category WHERE film_category.film_id=film.film_id)) AS name,
   (SELECT count(*) from film WHERE name='Action')
-FROM film;
+FROM film f;
 
 # Doesnt work. My attempt at using joins
 SELECT title, name,  count(category.name) movies_in_category FROM film
@@ -69,3 +69,31 @@ SELECT original.title, category.name, temp.movies_in_category FROM film original
 SELECT payment_id, first_name, last_name, amount
 FROM customer JOIN payment USING (customer_id)
 WHERE payment.amount > (SELECT AVG(amount) from payment);
+
+SELECT DATE(rental_date) as 'date', count(*) as number_rented FROM rental
+GROUP BY DATE(rental_date);
+
+SELECT DATE(rental_date) as 'date', count(*) as books_rented FROM rental
+GROUP BY DATE(rental_date)
+ORDER BY books_rented DESC
+LIMIT 10
+
+SELECT first_name, last_name FROM actor
+WHERE actor_id IN
+(SELECT actor_id FROM film_actor WHERE film_id IN
+(SELECT film_id FROM film WHERE title='FLASH WARS'))
+
+
+###EXAM
+SELECT first_name, last_name FROM actor
+WHERE actor_id IN
+      (SELECT actor_id FROM film_actor WHERE film_id IN
+                                             (SELECT film_id, count(*) as count FROM film GROUP BY film_id ORDER BY count DESC LIMIT 1));
+
+SELECT first_name, last_name FROM
+  (SELECT first_name, last_name, actor_id, count(*) as count FROM film_actor
+    JOIN actor USING (actor_id) GROUP BY film_id ORDER BY count ASC LIMIT 1) actor
+
+
+SELECT first_name, last_name, count(*) as count FROM film_actor
+  JOIN actor USING (actor_id) GROUP BY film_id ORDER BY count ASC

@@ -15,7 +15,7 @@ SELECT DISTINCT student.Name FROM
   LEFT JOIN grade_report USING (Section_identifier)
   LEFT JOIN student USING (Student_number);
 
-# Do it Yourself FAGGOT
+# Do it Yourself
 
 # Show prereqs for each course that each stdent took in the form:
 # Student | course | prereq
