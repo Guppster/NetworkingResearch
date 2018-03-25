@@ -24,3 +24,88 @@ LEFT JOIN(
 ) temp on prerequisite.Prerequisite_number = temp.Prerequisite_number
 
 
+## Question 2
+
+### course table
+
+Attributes:
+course_name, course_number, credit_hours, department
+
+Functional Dependencies: 
+course_name -> course_number
+course_number -> department, course_name, credit_hours
+
+Candidate Keys:
+(course_name)+ = course_name, course_number, department, credit_hours
+(course_number)+ = course_name, course_number, department, credit_hours
+
+Therefore both course_name and course_number are candidate keys
+
+This table has no unnesscessary attributes. 
+It is in 1NF because each attribute is atomic.
+It is in 2NF because each attribute is dependent on a key.
+It is in 3NF because there are no transitive dependencies
+It is in BCNF because all keys are also candidate keys
+
+### grade_report table
+
+Attributes: 
+student_number, section_identifier, grade
+
+Functional Dependencies:
+section_identifer, student_number -> grade
+
+Candidate Keys: 
+(section_identifier)+ = section_identifier
+(student_number)+ = student_number
+
+Therefore the candidate key is (section_number, student_number)
+
+Since the functional dependency key is the candidate key the table is in BCNF.
+
+### pre-requisite table
+
+Attributes: 
+course_number, prerequisite_number
+
+Functional Dependencies:
+course_number -> prerequisite_number
+
+Candidate Keys:
+(course_number)+ = course_number, prerequisite_number
+
+Therefore the candidate key is course_number
+
+Since the functional dependency key is the candidate key the table is in BCNF.
+
+### section table
+
+Attributes:
+section_identifier, course_number, semester, year, instructor
+
+Functional Dependencies:
+section_identifier -> course_number, semester, year, instructor
+
+Candidate Keys:
+(section_identifier)+ = section_identifier, course_number, semester, year, instructor
+
+Therefore the candidate key is section_identifier
+
+Since the functional dependency key is the candidate key the table is in BCNF.
+
+### student table
+
+Attributes:
+name, student_number, class, major
+
+Functional Dependencies:
+student_number -> name, class, major
+
+Candidate Keys:
+(student_number)+ = student_number, name, class, major
+
+Therefore the candidate key is student_number
+
+Since the functional dependency key is the candidate key the table is in BCNF.
+
+
