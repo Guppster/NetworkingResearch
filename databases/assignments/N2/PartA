@@ -1,2 +1,26 @@
 
-### MySQL statements and how to nomalize the database/tables
+# Part A
+
+## Question 1
+
+### LAB 2 DIY Question A
+
+SELECT DISTINCT Name, Course_number as Course,
+  IFNULL(Prerequisite_number, '') as Prerequisite FROM student
+  JOIN grade_report USING (Student_number)
+  JOIN section USING (Section_identifier)
+  JOIN course USING (Course_number)
+LEFT JOIN prerequisite USING (Course_number)
+ORDER BY Name ASC, course ASC;
+
+### LAB 2 DIY Question B
+
+SELECT CONCAT_WS(' : ', Course_number, Course_name) as course,
+  CONCAT_WS(' : ', prerequisite.Prerequisite_number, prerequisite_name) as prerequisite
+FROM course
+LEFT JOIN prerequisite USING (Course_number)
+LEFT JOIN(
+    SELECT Course_name as prerequisite_name, Course_number as Prerequisite_number from course
+) temp on prerequisite.Prerequisite_number = temp.Prerequisite_number
+
+
