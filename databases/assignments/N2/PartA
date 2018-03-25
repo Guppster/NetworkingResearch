@@ -108,4 +108,28 @@ Therefore the candidate key is student_number
 
 Since the functional dependency key is the candidate key the table is in BCNF.
 
+## Question 3
 
+### grade_report table
+
+ALTER TABLE grade_report MODIFY Student_number INT(10) UNSIGNED NOT NULL;
+
+ALTER TABLE grade_report
+ADD CONSTRAINT grade_report_student_Student_number_fk
+FOREIGN KEY (Student_number) REFERENCES student (Student_number);
+
+ALTER TABLE grade_report
+ADD CONSTRAINT grade_report_section_Section_identifier_fk
+FOREIGN KEY (Section_identifier) REFERENCES section (Section_identifier);
+
+### prerequisite table
+
+ALTER TABLE prerequisite
+ADD CONSTRAINT prerequisite_course_Course_number_fk
+FOREIGN KEY (Course_number) REFERENCES course (Course_number);
+
+### section table
+
+ALTER TABLE section
+ADD CONSTRAINT section_course_Course_number_fk
+FOREIGN KEY (Course_number) REFERENCES course (Course_number);
