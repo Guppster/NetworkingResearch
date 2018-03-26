@@ -48,4 +48,15 @@ reduce = function(key, values)
 db.actors.mapReduce(map, reduce, "movies");
 db.movies.find();
  
+db.actors.update({actor: 'Richard Gere III'}, {$set: {gender: 'Male'}});
+db.actors.update({actor: 'Julia Roberts'}, {$set: {gender: 'Female'}});
 
+db.actors.insert( { actor: "Tom Hanks",  born:1956, movies: ['Saving Private Ryan', 'Forest Gump', 'Big'] });
+db.actors.insert( { actor: "Robert De Niro", born:1943, movies: ['Raging Bull', 'Cape Fear', 'Taxi Driver'] });
+db.actors.insert( { actor: "Christian Bale",  born:1974, movies: ['The Dark Knight', 'Batman Begins', 'American Hustle', 'The Fighter'] });
+db.actors.insert( { actor: "Leonardo DiCaprio", born:1974, movies: ['Inception', 'The Departed', 'The Wolf of Wall Street'] });
+db.actors.insert( { actor: "Morgan Freeman", born:1937, movies: ['Se7en', 'Invictus', 'Million Dollar Baby'] });
+
+db.movies.find().hint({_id: 1}).forEach(function(item) {
+    db.movies.update({_id: item._id}, item.value);
+});
