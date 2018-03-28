@@ -96,7 +96,7 @@ function log(...logentry) {
   let outlog = datetime;
   if (Array.isArray(logentry)) {
     logentry.forEach((le) => {
-      if (le.constructor == String) {
+      if (le == String) {
         outlog += ' ' + le;
       } else {
         outlog += ' ' + JSON.stringify(le);
@@ -168,7 +168,7 @@ function genHash(db, collection, query, projection) {
     projection
   };
 
-  const cursor = db
+  const cursor = db.db('test')
     .collection(collection)
     .find(JSON.parse(query));
 
