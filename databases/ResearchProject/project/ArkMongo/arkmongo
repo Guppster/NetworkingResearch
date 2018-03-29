@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+# Hashes MongoDB documents and stores it on the Ark blockchain
+class ArkMongo
+  def initialize(args)
+    # Initialize command line args
+    @mongo_uri = args[0]
+    @collection = args[3]
+    @query = args[4]
+    @projection = args[5]
+
+    # Handle missing inputs
+    unless [@mongo_uri, @collection, @query, @projection].all?
+      puts 'USAGE: ./arkmongo <mongo_uri> <collection> <query> <projection>'
+      exit
+    end
+  end
+
+  # Doing things here
+  def process; end
+end
+
+ArkMongo.new(ARGV).process
