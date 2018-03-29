@@ -1,0 +1,3 @@
+[submodule "databases/ResearchProject/project/ark-mongo"]
+	path = databases/ResearchProject/project/ark-mongo
+	url = git@github.com:Guppster/ark-mongo.git
