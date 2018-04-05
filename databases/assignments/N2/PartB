@@ -44,6 +44,130 @@ db.movies.find().hint({_id: 1}).forEach(function(item) {
 
 ## Question 3
 
+db.actors.aggregate(
+    [
+        { 
+            "$unwind" : {
+                "path" : "$movies"
+            }
+        }, 
+        { 
+            "$group" : {
+                "_id" : {
+                    "Movie" : "$movies"
+                }, 
+                "Actors" : {
+                    "$push" : "$actor"
+                }
+            }
+        }, 
+        { 
+            "$out" : "movies"
+        }
+    ], 
+    { 
+        "allowDiskUse" : false
+    }
+);
+
 ## Question 4
 
+db.actors.aggregate(
+    [
+        { 
+            "$match" : {
+                "gender" : "Female"
+            }
+        }, 
+        { 
+            "$unwind" : {
+                "path" : "$movies"
+            }
+        }, 
+        { 
+            "$group" : {
+                "_id" : {
+                    "Movie" : "$movies"
+                }, 
+                "Actors" : {
+                    "$push" : "$actor"
+                }
+            }
+        }, 
+        { 
+            "$sort" : {
+                "Actors" : 1.0
+            }
+        }
+    ], 
+    { 
+        "allowDiskUse" : false
+    }
+);
+
 ## Question 5
+
+db.actors.aggregate(
+    [
+        { 
+            "$project" : {
+                "last_name" : {
+                    "$arrayElemAt" : [
+                        {
+                            "$split" : [
+                                "$actor", 
+                                " "
+                            ]
+                        }, 
+                        -1.0
+                    ]
+                }, 
+                "first_name" : {
+                    "$arrayElemAt" : [
+                        {
+                            "$split" : [
+                                "$actor", 
+                                " "
+                            ]
+                        }, 
+                        0.0
+                    ]
+                }, 
+                "movies" : "$movies", 
+                "gender" : "$gender"
+            }
+        }, 
+        { 
+            "$match" : {
+                "gender" : "Female"
+            }
+        }, 
+        { 
+            "$unwind" : {
+                "path" : "$movies"
+            }
+        }, 
+        { 
+            "$group" : {
+                "_id" : {
+                    "Movie" : "$movies"
+                }, 
+                "actors" : {
+                    "$push" : {
+                        "first_name" : "$first_name", 
+                        "last_name" : "$last_name"
+                    }
+                }
+            }
+        }, 
+        { 
+            "$sort" : {
+                "actors.last_name" : 1.0
+            }
+        }
+    ], 
+    { 
+        "allowDiskUse" : false
+    }
+);
+

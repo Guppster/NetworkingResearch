@@ -1,0 +1,8 @@
+{"_id":{"$oid":"5ab8053e637e9449d0d79eaf"},"actor":"Richard Gere III","born":1949.0,"movies":["Pretty Woman","Runaway Bride","Chicago"],"gender":"Male"}
+{"_id":{"$oid":"5ab80556637e9449d0d79eb0"},"actor":"Julia Roberts","born":1967.0,"movies":["Pretty Woman","Runaway Bride","Osage County"],"gender":"Female"}
+{"_id":{"$oid":"5ab80558637e9449d0d79eb1"},"actor":"Meryl Streep","born":1949.0,"movies":["The Devil Wears Prada","Osage County","The Iron Lady","The Manchurian Candidate","Out of Africe"],"gender":"Female"}
+{"_id":{"$oid":"5ab82a7e57ef1f60eb0c8c84"},"actor":"Tom Hanks","born":1956.0,"movies":["Saving Private Ryan","Forest Gump","Big"],"gender":"Male"}
+{"_id":{"$oid":"5ab82a7e57ef1f60eb0c8c85"},"actor":"Robert De Niro","born":1943.0,"movies":["Raging Bull","Cape Fear","Taxi Driver"],"gender":"Male"}
+{"_id":{"$oid":"5ab82a7e57ef1f60eb0c8c86"},"actor":"Christian Bale","born":1974.0,"movies":["The Dark Knight","Batman Begins","American Hustle","The Fighter"],"gender":"Male"}
+{"_id":{"$oid":"5ab82a7f57ef1f60eb0c8c87"},"actor":"Leonardo DiCaprio","born":1974.0,"movies":["Inception","The Departed","The Wolf of Wall Street"],"gender":"Male"}
+{"_id":{"$oid":"5ab82a7f57ef1f60eb0c8c88"},"actor":"Morgan Freeman","born":1937.0,"movies":["Se7en","Invictus","Million Dollar Baby"],"gender":"Male"}
