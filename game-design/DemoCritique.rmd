@@ -53,10 +53,12 @@ shoot.
 ### What clarifications are needed?
 
 I think the developers could solve this by including a small intro story and
-have a popup with the controls to let the user know how to jump into the action.
-They could also add a few dummy enemies near the start that do not shoot back so
-it would be easier for the player to get used to the controls before the action
-begins.
+have a popup with the controls to let the user know how to jump into the
+action. Once i had played the game a few times I discovered that I could shoot
+the lights to avoid detection. This is a very hard game aspect for a player to
+assume themselves so I think it really needs an explanation. They could also
+add a few dummy enemies near the start that do not shoot back so it would be
+easier for the player to get used to the controls before the action begins.
 
 ### What type of tutorial would you suggest for this game?
 
@@ -71,7 +73,8 @@ enemy difficulty.
 
 I found CloseCall to be a really fun game. After discovering the controls and 
 shooting mechanic I really enjoyed shooting down the enemies. I had a lot of fun
-trying to beat my best time to complete each level.
+trying to beat my best time to complete each level. The shooting and damage effects
+created an immersive experience that kept me playing for multiple play throughs.
 
 ### Did it provide the right level of challenge?
 
@@ -81,8 +84,10 @@ player to be prepared for them.
 
 ### If it wasn't part of your assignment for this course, would you play this game?
 
-Yes i played the game many times to get a better and better time of completion.
-If there were more levels to the game i would definately continue playing.
+Yes I played the game many times to get a better and better time of completion.
+If there were more levels to the game I would definitely continue playing.
+In my opinion, I had more fun playing this than most of the retro flash games
+I can find online.
 
 ### What one word would you use to describe this game?
 
@@ -108,15 +113,18 @@ levels again to improve their times.
 
 ### What is unique/creative/innovative about the game? 
 
-I think the most creative element of this game is the use of lighting and how 
+I think the most creative element of this game is the use of lighting and how
 the player can shoot out the lights to avoid detection and play the game at the
-pace they want. 
+pace they want. The player can either run through shooting everyone at the same
+time and hope not to die, or they can shoot out the lights and kill the enemies
+one at a time.
 
 ### What are its key strengths (what did you like best about it)?
 
 The key strengths I noticed in this game is it's fun graphics, fast paced
 action, advanced use of lighting, and good selection of weapons with good
-pickup/ammo mechanics that allow for quick firefights.
+pickup/ammo mechanics that allow for quick firefights. I really felt immersed
+in the fight due to these key elements of the game.
 
 ### What suggestions do you have for improvements?
 
@@ -129,6 +137,7 @@ could be improved by making the player aiming more responsive.
 
 ### Would you greenlight for full production of this demo?  Why/Why not?
 
-Yes I think this would be a really fun game to come out of full production. It
-has an addictive quality about it that will surely attract and retain users for
-long periods of time.
+Overall I think this would be a really fun game to come out of full production.
+The main reason I think this game would do well in production is that it has an
+addictive gameplay that will surely attract and retain users for long periods
+of time. 
