@@ -6,8 +6,8 @@ output:
     number_sections: false
     keep_tex: false
     fig_caption: true
-    template: ../../templates/gsingh-basic.tex
-title: "Project Proposal"
+    template: ../../../../templates/gsingh-basic.tex
+title: "Final Report"
 subtitle: "Securing NoSQL databases using blockchains"
 subsubtitle: "MongoDB + ARK Blockchain"
 
@@ -84,46 +84,80 @@ carry the hash of a single document. Using this free and open source blockchain
 also allows us to run a local instance, which means we don't have to pay to
 secure our data and no information is exposed to the outside world.
 
-### Project Details 
+### Architecture and Environment
 
-We would like to design this project as a command line utility which allows the
-user to easily hash and validate the contents of a Mongo database running on
-the local machine. The project will consist of a Mongo database and a local
-deployment of an Ark blockchain. Unless complications come up with the
-platform, we are planning on using the Ruby language to develop the command
-line utility. Since we are using Ruby, we will be using the open source
-ark-ruby library to interact with the Ark blockchain and the official MongoDB 
-Ruby driver to interact with the database.
+---
+#    Describe the project environment (software: libraries, frameworks, etc, hardware, organizations, etc.)
+#    Diagrams and figures are useful here if appropriate.
+#    What software, hardware, or tools did you use?
+---
 
-The system will work by first prompting the user for a query to obtain a set of
-documents. The set of documents will then be hashed and a corresponding address
-on the Ark blockchain will be allocated for this query. The hash of the
-set will be pushed in the form of a transaction to that specific address from
-a central blockchain management address (BCMA) which will act as one of the
-forging delegates and therefore always have funds to process the transaction.
-The transaction ID returned from the blockchain interaction will be stored back
-into the database in a control document storing the state of each secured set
-of documents so later on we can validate against this.
 
-In this project we would like to deliver the functionality to 
-manually validate queries and detect tampering. The final deliverable will be
-the command line utility allowing the user to seamlessly interact with the
-entire system. If time permits, as an optional component, we would continue to
-integrate the validation system into the database and allow for automatic
-tamper detection. Another optional task which could be implemented in the
-future is the ability to secure all documents, not just the queries specified
-by the user. This project will contribute a system that is capable of utilizing
-the cryptographic power of blockchains to secure a locally stored traditional
-database. It provides a unique approach in between a fully blockchain based
-data storage and a NoSQL database.
+### Implementation
 
-### Conclusion 
+---
+#    What were the most difficult issues and challenges in the implementation?
+#    Give code details (not a complete listing, but descriptions of key parts). Discuss only the most important/interesting aspects.
+#    Include a test plan. How the program/system was verified? Put the actual test results in the Appendix.
+---
+
+### Results
+
+---
+#    What is the end product? (application, data visualization, report, etc.)
+#    Describe all the features of the end product.
+#
+#    Provide details of experiments/simulations that were carried out with the
+#    code written. Why were certain experiments carried out but not others? What
+#    were the important parameters in the simulation and how did they affect the
+#    results?
+#
+#    You can put all the graphs and tables in the Appendix, but it is generally
+#    better to keep these close to the text they illustrate, as this is easier for
+#    the reader.
+---
+ 
+
+---
+# We would like to design this project as a command line utility which allows the
+# user to easily hash and validate the contents of a Mongo database running on
+# the local machine. The project will consist of a Mongo database and a local
+# deployment of an Ark blockchain. Unless complications come up with the
+# platform, we are planning on using the Ruby language to develop the command
+# line utility. Since we are using Ruby, we will be using the open source
+# ark-ruby library to interact with the Ark blockchain and the official MongoDB 
+# Ruby driver to interact with the database.
+# 
+# The system will work by first prompting the user for a query to obtain a set of
+# documents. The set of documents will then be hashed and a corresponding address
+# on the Ark blockchain will be allocated for this query. The hash of the
+# set will be pushed in the form of a transaction to that specific address from
+# a central blockchain management address (BCMA) which will act as one of the
+# forging delegates and therefore always have funds to process the transaction.
+# The transaction ID returned from the blockchain interaction will be stored back
+# into the database in a control document storing the state of each secured set
+# of documents so later on we can validate against this.
+# 
+# In this project we would like to deliver the functionality to 
+# manually validate queries and detect tampering. The final deliverable will be
+# the command line utility allowing the user to seamlessly interact with the
+# entire system. If time permits, as an optional component, we would continue to
+# integrate the validation system into the database and allow for automatic
+# tamper detection. Another optional task which could be implemented in the
+# future is the ability to secure all documents, not just the queries specified
+# by the user. This project will contribute a system that is capable of utilizing
+# the cryptographic power of blockchains to secure a locally stored traditional
+# database. It provides a unique approach in between a fully blockchain based
+# data storage and a NoSQL database.
+---
+
+### Conclusion and Future Work
 
 Currently, database logging isn't a completely reliable way to verify if someone
 has tampered with the documents in a database. By combining databases fast and
 reliable data storage and blockchains secure, distributed and immutable data
 storage, we would be able to secure a locally stored traditional database without
-compromizing much of the speed of the database system. By choosing Ark as our 
+compromising much of the speed of the database system. By choosing Ark as our 
 blockchain technology, we will be able to deliver a feasable solution for
 securing databases.
 
