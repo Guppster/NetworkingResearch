@@ -86,20 +86,33 @@ secure our data and no information is exposed to the outside world.
 
 ### Architecture and Environment
 
----
-#    Describe the project environment (software: libraries, frameworks, etc, hardware, organizations, etc.)
-#    Diagrams and figures are useful here if appropriate.
-#    What software, hardware, or tools did you use?
----
+We used Ruby to create the command line utility that executes the ark mongo
+program. The reasoning behind Ruby is that it is simple to develop on as well
+as Ruby already contains and Ark Ruby library that makes it easy to establish
+and communicate with ARK for our blockchain. For our database we used MongoDB
+because we did not need any the added complexity that MySQL brings with
+relationships. We needed a simple schemeless, NoSQL database and from class and
+our research, MongoDB executed the job perfectly. The blockchain backend that
+we used was Ark blockchain. The reasoning behind this is that for starters, it
+is open source which enables us to implement it the way we need it without any
+restrictions but we have previously worked and developed for ARK therefore the
+technology is familiar and much simpler to integrate with. 
 
+A couple tools that we ended up using for the hosting and deployment of our
+tool are: Postgres, Docker, and Vagrant. We used Postgres to store the data
+within the blockchain. Docker was used for the deployment of the MongoDB. The
+benefit of using docker is that we can simulate the connection and storage for
+the database without neccessarily having to ... Lastly, we used Vagrant for the
+deployment of the ARK blockchain. Vagrant allowed us to host the blockchain in
+virtual machine which mitigated the trouble in creating all the connection and
+hosting it in our own servers. Although complex for setup, it made it easier to
+deploy and test on different machines. Vagrant and Docker guarenteed that our
+program would be able to work on any machine. Other tools that we used for
+visualization and development were NeoVim and Robo3T.
+
+[Insert Diagram Here]
 
 ### Implementation
-
----
-#    What were the most difficult issues and challenges in the implementation?
-#    Give code details (not a complete listing, but descriptions of key parts). Discuss only the most important/interesting aspects.
-#    Include a test plan. How the program/system was verified? Put the actual test results in the Appendix.
----
 
 Developing the ArkMongo project came with many difficulties and challenges
 because it was quite an innovative idea using new technologies. We didn't have
@@ -147,6 +160,25 @@ allocated for that query on the blockchain.
 #    better to keep these close to the text they illustrate, as this is easier for
 #    the reader.
 ---
+
+The end product we have developed is a command line utility that runs singular 
+operations of hashing a query or validating a query. The first main feature
+of the product is Hashing. Hashing requires the parameters: mongodb's URI, 
+secret key of an address to send transactions from, a nethash of the blockchain,
+a collection name and a query. 
+
+An example of an execution of the hashing function is as follows: 
+
+`./arkmongo hash mongodb://127.0.0.1:27017/test 'planet wrap clever dirt silk
+dance prefer view try swap enact island'
+'6a0eab08d4b8c3c818f93bc45fb51f7317e50c4c764fbedbf9675bb0e688dc9a' films -q
+Rating:G`
+
+This function begins by initializing a hashing database if one doesn't already
+exist. The database will be used as a cache for previously run hash requests
+and will allow the user to later verify their hashes quickly. Having this cache
+means the user doesn't have to remember anything but their collection and query to 
+return their hashes.
  
 
 ---
