@@ -110,8 +110,6 @@ deploy and test on different machines. Vagrant and Docker guarenteed that our
 program would be able to work on any machine. Other tools that we used for
 visualization and development were NeoVim and Robo3T.
 
-[Insert Diagram Here]
-
 ### Implementation
 
 Developing the ArkMongo project came with many difficulties and challenges
@@ -147,20 +145,6 @@ allocated for that query on the blockchain.
 
 ### Results
 
----
-#    What is the end product? (application, data visualization, report, etc.)
-#    Describe all the features of the end product.
-#
-#    Provide details of experiments/simulations that were carried out with the
-#    code written. Why were certain experiments carried out but not others? What
-#    were the important parameters in the simulation and how did they affect the
-#    results?
-#
-#    You can put all the graphs and tables in the Appendix, but it is generally
-#    better to keep these close to the text they illustrate, as this is easier for
-#    the reader.
----
-
 The end product we have developed is a command line utility that runs singular 
 operations of hashing a query or validating a query. The first main feature
 of the product is Hashing. Hashing requires the parameters: mongodb's URI, 
@@ -179,40 +163,29 @@ exist. The database will be used as a cache for previously run hash requests
 and will allow the user to later verify their hashes quickly. Having this cache
 means the user doesn't have to remember anything but their collection and query to 
 return their hashes.
- 
+Next this function runs the query in the specified mongoDB and runs each
+document through a sha256 hash. At the end of the results the query itself is
+also added to the hash. Then the hash is encoded into hex and stored on to the
+query_hashes collection in the cache database we initialized earlier.
 
----
-# We would like to design this project as a command line utility which allows the
-# user to easily hash and validate the contents of a Mongo database running on
-# the local machine. The project will consist of a Mongo database and a local
-# deployment of an Ark blockchain. Unless complications come up with the
-# platform, we are planning on using the Ruby language to develop the command
-# line utility. Since we are using Ruby, we will be using the open source
-# ark-ruby library to interact with the Ark blockchain and the official MongoDB 
-# Ruby driver to interact with the database.
-# 
-# The system will work by first prompting the user for a query to obtain a set of
-# documents. The set of documents will then be hashed and a corresponding address
-# on the Ark blockchain will be allocated for this query. The hash of the
-# set will be pushed in the form of a transaction to that specific address from
-# a central blockchain management address (BCMA) which will act as one of the
-# forging delegates and therefore always have funds to process the transaction.
-# The transaction ID returned from the blockchain interaction will be stored back
-# into the database in a control document storing the state of each secured set
-# of documents so later on we can validate against this.
-# 
-# In this project we would like to deliver the functionality to 
-# manually validate queries and detect tampering. The final deliverable will be
-# the command line utility allowing the user to seamlessly interact with the
-# entire system. If time permits, as an optional component, we would continue to
-# integrate the validation system into the database and allow for automatic
-# tamper detection. Another optional task which could be implemented in the
-# future is the ability to secure all documents, not just the queries specified
-# by the user. This project will contribute a system that is capable of utilizing
-# the cryptographic power of blockchains to secure a locally stored traditional
-# database. It provides a unique approach in between a fully blockchain based
-# data storage and a NoSQL database.
----
+Now we generate a new secret key for the blockchain address by making use of
+the target database name, collection, and query. This way if we have the same
+query, we end up with the same address. Keeping the secret private is not
+required in this case because we care more about the history of a specific
+address than the actual state of the account. Using the secret and the public
+key that we derive from it, we can then create and sign a transaction with our
+hash in the data-field. The next step involves pushing this transaction onto
+a block in the blockchain. We can do this by sending it to the API endpoint on
+an Ark Node. The node's address was defined
+ 
+Once the transaction has been pushed to a node, we need to begin querying the
+blockchain to see if we can find that transaction in the wild. This process
+usually takes around 8 seconds but can take a bit longer sometimes. We send GET
+requests to the node periodically until the transaction is found. Once it is,
+we indicate this to the user and continue querying until we have enough
+confirmations on the block to be 100% sure it cant be tampered with. This
+process usually takes around 40 seconds because we wait for 5 confirmations and
+new block takes around 8 seconds.
 
 ### Conclusion and Future Work
 
