@@ -1,0 +1,134 @@
+---
+output: 
+  pdf_document:
+    citation_package: biblatex
+    toc: false
+    number_sections: false
+    keep_tex: false
+    fig_caption: true
+    template: ../templates/gsingh-basic.tex
+title: "Game Critique"
+subtitle: "CloseCall"
+subsubtitle: "CS4483"
+
+runhead: "Game Demo Critique"
+author:
+- name: Gurpreet Singh
+  affiliation: 250674134
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontsize: 11pt
+indent: yes
+colorlinks: true
+---
+
+## General Information
+
+### Name of the game being reviewed
+
+The name of the game being reviewed is CloseCall. 
+
+### Genre(s) that the game belongs to
+
+CloseCall is a 2D Top-Down shooter with retro graphics and mechanics.
+
+### Target market of the game
+
+The target market is most likely a competitive audience of medium to advanced
+game players because the game the game does present a tough challenge within the
+first two levels.
+    
+## Game Comprehension
+
+### Do you have a clear picture of the core gameplay?  
+
+When you start the game you are placed looking at a top down view of a character
+and immediately enemies begin shooting at you. The player isn't told how to 
+control the character or how to shoot back. Since there is no introduction, the
+core gameplay is not clear to the user from the start. Although, the controls
+are quite intuitive and the target audience for this game is assumed to know
+that WASD will move the character and clicking will cause the character to
+shoot.
+
+### What clarifications are needed?
+
+I think the developers could solve this by including a small intro story and
+have a popup with the controls to let the user know how to jump into the action.
+They could also add a few dummy enemies near the start that do not shoot back so
+it would be easier for the player to get used to the controls before the action
+begins.
+
+### What type of tutorial would you suggest for this game?
+
+In my opinion this game doesn't need a large tutorial level or anything since it
+appears to be aimed at a higher skill level of player but it could definately
+benefit from 'tooltips' or 'hints' during the first level and maybe reduced
+enemy difficulty.
+
+## Game Critique
+
+### Did you think the game was fun?  Why/why not?
+
+I found CloseCall to be a really fun game. After discovering the controls and 
+shooting mechanic I really enjoyed shooting down the enemies. I had a lot of fun
+trying to beat my best time to complete each level.
+
+### Did it provide the right level of challenge?
+
+I feel this game provides the correct amount of challenge because the enemies
+increased in difficulty on each level and the third level really required the
+player to be prepared for them.
+
+### If it wasn't part of your assignment for this course, would you play this game?
+
+Yes i played the game many times to get a better and better time of completion.
+If there were more levels to the game i would definately continue playing.
+
+### What one word would you use to describe this game?
+
+If I had to describe this game in one word I would use "intense" because once 
+you are in the action and the enemies are shooting you, you have be constantly
+moving to avoid bullets while shooting back. The action doesn't stop until you
+die or complete the level
+
+### Do you believe this would be a good game for the target market?  Why/why not?  
+
+I believe their target audience is looking for an addictive challege with a high
+skill ceiling and this game provides exactly what they are looking for. It is a 
+great fit for experienced gamers who want to challenge their friends' top scores
+and play an action packed game.
+
+### Will it motivate the players?  
+
+The timed levels were a great motivation for me to learn how the enemies react 
+and how I could kill them faster. I think most players would be motivated by a
+similar factor. Since the level menu shows the player their past times, when the
+player improves at the game, they will want to go back and play the earlier
+levels again to improve their times.
+
+### What is unique/creative/innovative about the game? 
+
+I think the most creative element of this game is the use of lighting and how 
+the player can shoot out the lights to avoid detection and play the game at the
+pace they want. 
+
+### What are its key strengths (what did you like best about it)?
+
+The key strengths I noticed in this game is it's fun graphics, fast paced
+action, advanced use of lighting, and good selection of weapons with good
+pickup/ammo mechanics that allow for quick firefights.
+
+### What suggestions do you have for improvements?
+
+One flaw I noticed in the game play is the aiming of the gun is a little bit
+delayed that makes hitting enemies difficult until the player has adapted to the
+delayed player movement. Since the game has such quick action, I think the game
+could be improved by making the player aiming more responsive.
+
+## Final Verdict
+
+### Would you greenlight for full production of this demo?  Why/Why not?
+
+Yes I think this would be a really fun game to come out of full production. It
+has an addictive quality about it that will surely attract and retain users for
+long periods of time.
