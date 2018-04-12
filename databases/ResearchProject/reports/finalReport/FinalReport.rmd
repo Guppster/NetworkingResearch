@@ -11,7 +11,7 @@ title: "Final Report"
 subtitle: "Securing NoSQL databases using blockchains"
 subsubtitle: "MongoDB + ARK Blockchain"
 
-runhead: "Project Proposal"
+runhead: "Final Report"
 author:
 - name: Gurpreet, Paul and Fernando
   affiliation: CS4411
