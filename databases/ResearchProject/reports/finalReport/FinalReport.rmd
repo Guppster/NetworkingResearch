@@ -101,6 +101,37 @@ secure our data and no information is exposed to the outside world.
 #    Include a test plan. How the program/system was verified? Put the actual test results in the Appendix.
 ---
 
+Developing the ArkMongo project came with many difficulties and challenges
+because it was quite an innovative idea using new technologies. We didn't have
+many resources to base the implementation off of and we were all fairly
+inexperienced with the use of databases combined with a blockchain.
+
+In order to gain enough experience with the technology to develop such
+a solution we looked at it in major sections and tackled each individually. The
+first section and challenge was creating a hash of a document set within
+mongodb. Since we were going to write the command line utility in Ruby, we also
+did all of our prototyping in Ruby as well. The solution we came to for hashing
+document sets was to run a query and add each document returned to a sha256
+hash. To do this we used the Digest built in library in Ruby. One of the bugs
+we encountered in this stage was that the hash wasnt being stored to the
+database correctly. We later discovered that we had to encode the hash in hex
+form so we could view it correctly.
+
+The next challenge was saving to the Blockchain and database. The database was
+fairly simple because we learned how to do this in class, but setting up
+a local blockchain was not an easy task. It took us many iterations of
+configurations to have deployed a blockchain that worked correctly for our
+task. The major challenge we faced in this step was discovering a protocol that
+would allow us to discover data we send to the blockchain. We decided to
+allocate one address per individual query and then store that address inside
+our caching database so we can discover it again and add to it later.
+
+The program was verified by running it and monitoring the changes within the
+caching database and the blockchain addresses. The result we were looking for
+are a new entry in the cache database and new hash pushed to the address
+allocated for that query on the blockchain.
+
+
 ### Results
 
 ---
