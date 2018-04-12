@@ -110,6 +110,8 @@ deploy and test on different machines. Vagrant and Docker guarenteed that our
 program would be able to work on any machine. Other tools that we used for
 visualization and development were NeoVim and Robo3T.
 
+![Flowchart of Architecture](./flowchart.png)
+
 ### Implementation
 
 Developing the ArkMongo project came with many difficulties and challenges
@@ -141,7 +143,6 @@ The program was verified by running it and monitoring the changes within the
 caching database and the blockchain addresses. The result we were looking for
 are a new entry in the cache database and new hash pushed to the address
 allocated for that query on the blockchain.
-
 
 ### Results
 
@@ -187,13 +188,23 @@ confirmations on the block to be 100% sure it cant be tampered with. This
 process usually takes around 40 seconds because we wait for 5 confirmations and
 new block takes around 8 seconds.
 
+The screenshot of the final state of MongoDB after a hash has completed is pictured
+below and shows all fields that will be persistently stored.
+
+![MongoDB document structure and final state](./mongoSnapshot.png)
+
+\newpage
+
 ### Conclusion and Future Work
 
-Currently, database logging isn't a completely reliable way to verify if someone
-has tampered with the documents in a database. By combining databases fast and
-reliable data storage and blockchains secure, distributed and immutable data
-storage, we would be able to secure a locally stored traditional database without
-compromising much of the speed of the database system. By choosing Ark as our 
-blockchain technology, we will be able to deliver a feasable solution for
-securing databases.
+Currently, database logging isn't a completely reliable way to verify if
+someone has tampered with the documents in a database. By combining databases
+fast and reliable data storage and blockchains secure, distributed and
+immutable data storage, we would be able to secure a locally stored traditional
+database without compromising much of the speed of the database system. By
+choosing Ark as our blockchain technology, we will be able to deliver
+a feasible solution for securing databases. This project could be improved upon
+in the future by integrating into a typical workflow so the user doesnt even
+realize that our software is running in the background when they are accessing
+the database.
 
