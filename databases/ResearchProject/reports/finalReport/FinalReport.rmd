@@ -177,7 +177,7 @@ address than the actual state of the account. Using the secret and the public
 key that we derive from it, we can then create and sign a transaction with our
 hash in the data-field. The next step involves pushing this transaction onto
 a block in the blockchain. We can do this by sending it to the API endpoint on
-an Ark Node. The node's address was defined
+an Ark Node. The node's address was defined in the input parameters.
  
 Once the transaction has been pushed to a node, we need to begin querying the
 blockchain to see if we can find that transaction in the wild. This process
