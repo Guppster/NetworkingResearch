@@ -116,41 +116,41 @@ visualization and development were NeoVim and Robo3T.
 
 Developing the ArkMongo project came with many difficulties and challenges
 because it was quite an innovative idea using new technologies. We didn't have
-many resources to base the implementation off of and we were all fairly
+many resources to base the implementation off and we were all fairly
 inexperienced with the use of databases combined with a blockchain.
 
 In order to gain enough experience with the technology to develop such
 a solution we looked at it in major sections and tackled each individually. The
 first section and challenge was creating a hash of a document set within
-mongodb. Since we were going to write the command line utility in Ruby, we also
+MongoDB. Since we were going to write the command line utility in Ruby, we also
 did all of our prototyping in Ruby as well. The solution we came to for hashing
 document sets was to run a query and add each document returned to a sha256
-hash. To do this we used the Digest built in library in Ruby. One of the bugs
-we encountered in this stage was that the hash wasnt being stored to the
+hash. To do this we used the Digest built-in library in Ruby. One of the bugs
+we encountered in this stage was that the hash wasn't being stored to the
 database correctly. We later discovered that we had to encode the hash in hex
 form so we could view it correctly.
 
-The next challenge was saving to the Blockchain and database. The database was
+The next challenge was saving to the blockchain and database. The database was
 fairly simple because we learned how to do this in class, but setting up
 a local blockchain was not an easy task. It took us many iterations of
-configurations to have deployed a blockchain that worked correctly for our
-task. The major challenge we faced in this step was discovering a protocol that
-would allow us to discover data we send to the blockchain. We decided to
+configurations to deploy a blockchain that worked correctly for our task. 
+The major challenge we faced in this step was discovering a protocol that
+would allow us to discover data we sent to the blockchain. We decided to
 allocate one address per individual query and then store that address inside
-our caching database so we can discover it again and add to it later.
+our caching database so we could discover it again and add to it later.
 
 The program was verified by running it and monitoring the changes within the
 caching database and the blockchain addresses. The result we were looking for
-are a new entry in the cache database and new hash pushed to the address
+include a new entry in the cache database and a new hash pushed to the address
 allocated for that query on the blockchain.
 
 ### Results
 
 The end product we have developed is a command line utility that runs singular 
 operations of hashing a query or validating a query. The first main feature
-of the product is Hashing. Hashing requires the parameters: mongodb's URI, 
-secret key of an address to send transactions from, a nethash of the blockchain,
-a collection name and a query. 
+of the product is hashing. Hashing requires the following parameters: MongoDB's URI, 
+a secret key of an address to send transactions from, a nethash of the blockchain,
+and a collection name and a query. 
 
 An example of an execution of the hashing function is as follows: 
 
@@ -160,11 +160,11 @@ dance prefer view try swap enact island'
 Rating:G`
 
 This function begins by initializing a hashing database if one doesn't already
-exist. The database will be used as a cache for previously run hash requests
-and will allow the user to later verify their hashes quickly. Having this cache
+exist. The database will be used as a cache for previously ran hash requests
+and it will allow the user to later verify their hashes quickly. Having this cache
 means the user doesn't have to remember anything but their collection and query to 
 return their hashes.
-Next this function runs the query in the specified mongoDB and runs each
+Next this function runs the query in the specified MongoDB and runs each
 document through a sha256 hash. At the end of the results the query itself is
 also added to the hash. Then the hash is encoded into hex and stored on to the
 query_hashes collection in the cache database we initialized earlier.
@@ -184,9 +184,9 @@ blockchain to see if we can find that transaction in the wild. This process
 usually takes around 8 seconds but can take a bit longer sometimes. We send GET
 requests to the node periodically until the transaction is found. Once it is,
 we indicate this to the user and continue querying until we have enough
-confirmations on the block to be 100% sure it cant be tampered with. This
+confirmations on the block to be 100% sure it can't be tampered with. This
 process usually takes around 40 seconds because we wait for 5 confirmations and
-new block takes around 8 seconds.
+each new block takes around 8 seconds.
 
 The screenshot of the final state of MongoDB after a hash has completed is pictured
 below and shows all fields that will be persistently stored.
@@ -200,11 +200,11 @@ below and shows all fields that will be persistently stored.
 Currently, database logging isn't a completely reliable way to verify if
 someone has tampered with the documents in a database. By combining databases
 fast and reliable data storage and blockchains secure, distributed and
-immutable data storage, we would be able to secure a locally stored traditional
+immutable data storage, we are able to secure a locally stored traditional
 database without compromising much of the speed of the database system. By
-choosing Ark as our blockchain technology, we will be able to deliver
+choosing Ark as our blockchain technology, we were able to deliver
 a feasible solution for securing databases. This project could be improved upon
-in the future by integrating into a typical workflow so the user doesnt even
+in the future by integrating it into a typical workflow so the user doesnt even
 realize that our software is running in the background when they are accessing
 the database.
 
