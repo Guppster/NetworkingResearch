@@ -37,7 +37,7 @@ system. The problem is that logging can easily be disabled or reduced to
 a level where malicious actions could occur without leaving a trace. 
 
 The solution we are proposing is to use hashing to capture the active state of
-a Mongo database and use an Ark blockchain to verify it's integrity. We would
+a Mongo database and use an Ark blockchain to verify its integrity. We would
 like to be able to specify a query resulting in a set of documents. The result
 will then be hashed and stored on the blockchain to a corresponding address.
 This functionality could then be automated to check the database's secured
@@ -91,7 +91,7 @@ program. The reasoning behind Ruby is that it is simple to develop on as well
 as Ruby already contains and Ark Ruby library that makes it easy to establish
 and communicate with ARK for our blockchain. For our database we used MongoDB
 because we did not need any the added complexity that MySQL brings with
-relationships. We needed a simple schemeless, NoSQL database and from class and
+relationships. We needed a simple scheme less, NoSQL database and from class and
 our research, MongoDB executed the job perfectly. The blockchain backend that
 we used was Ark blockchain. The reasoning behind this is that for starters, it
 is open source which enables us to implement it the way we need it without any
@@ -102,7 +102,7 @@ A couple tools that we ended up using for the hosting and deployment of our
 tool are: Postgres, Docker, and Vagrant. We used Postgres to store the data
 within the blockchain. Docker was used for the deployment of the MongoDB. The
 benefit of using docker is that we can simulate the connection and storage for
-the database without neccessarily having to ... Lastly, we used Vagrant for the
+the database. Lastly, we used Vagrant for the
 deployment of the ARK blockchain. Vagrant allowed us to host the blockchain in
 virtual machine which mitigated the trouble in creating all the connection and
 hosting it in our own servers. Although complex for setup, it made it easier to
